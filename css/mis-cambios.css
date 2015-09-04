@@ -1,0 +1,576 @@
+/*Mis cambios*/
+
+/*#0072a7 :: color corporativo para cambiar en el theme (serif) correspondiente   */
+
+/*Copio y modifico aquí algunos de los elementos del css del them serif.   miscambios.css overwrites it porque está el úlitmo en el header*/
+
+
+.reveal a:not(.image) {
+  color: inherit;
+  text-decoration: none;
+  /*-webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  -ms-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;*/
+  
+border-bottom: 1px gray dotted;
+    
+}
+
+.reveal a:not(.image):hover {
+  color: #0072a7;
+  text-shadow: none;
+  border: none;
+}
+
+
+/*Contenedor para el numero de página total*/
+
+
+div.numero-pag-total {
+	
+
+position: fixed;
+display: block;
+right: 30px;
+bottom: 15px;
+opacity: 0.5;
+z-index: 31;
+font-size: 12px; }
+
+
+/*ICONO DEL MENÚ - arriba a la izquierda*/
+
+	  
+#menu {
+	 	top: 30px;
+	 	left: 0px;
+	 	padding-left: 1px;
+	 	position: absolute;
+	 	background-color: #e4e1e1;
+	 	 	
+	 	 	-webkit-border-radius: 0 1em 1em 0;
+	 	 	-ms-border-radius: 0 1em 1em 0;
+	 	 	 -o-border-radius: 0 1em 1em 0;
+	 	 	 border-radius: 0 1em 1em 0;
+font-size: 1.3em;
+	 } 
+	  
+
+#menu a {
+  color: #8F8F8F;
+  display: inline-block;
+  padding: 0.4em;
+  text-decoration: none;
+}
+
+#menu a:hover {
+
+	color: #0072a7;
+}
+
+
+#menu img {
+	border: 0;  /*puesto solo para IE*/
+}
+
+#menu img:hover {
+  	opacity: 0.48;
+}
+
+
+/*LOGO  - arriba a la derecha*/
+
+
+
+
+
+#logo {
+	 	top: -7px;
+	 	right: -12px;
+	 	padding-right: 5px;
+	 	position: absolute;
+		 } 
+	  
+
+#logo a {
+  color: #8F8F8F;
+  display: inline-block;
+  padding: 0.5em;
+  text-shadow: 0 1px 0 #EDEDED;
+  text-decoration: none;
+}
+
+#logo a:hover {
+
+	color: #8e0905;
+}
+
+
+#logo img {
+	border: 0;  /*puesto solo para IE*/
+	
+ 	max-height: 80px;
+	
+}
+
+#logo img:hover {
+  	opacity: 0.48;
+}
+
+
+
+
+
+/*IMAGENES*/
+	
+	
+	
+.imagen-varia {
+
+/*Para las imágenes de los editores*/
+	
+	height: 100%;
+	width: 100%;
+	}
+
+.imagen-varia a, a:visited, a:active {
+	
+	  border-bottom-style: none !important;
+	
+}
+
+.imagen-varia img {
+	
+	height:150px;  /*		Al parecer firefox no acepta porcentaje*/
+	
+}
+
+.imagen-varia a:hover img {
+	opacity: 0.64;	
+}
+
+.imagen-varia #img-sigil {
+	
+float: right;
+
+
+}
+
+/*Solo una Imagen */
+
+.imagen { 
+	height: 600px;
+		
+}
+
+
+/*Imagen y texto con pie de foto izquierda y derecha*/
+
+
+div.imagen-texto {
+	
+	float: left;
+	padding: 3px !important; 
+	width: 30%;
+	max-height: 700px;
+	margin-right: 30px;
+	
+		
+	border: 1px solid #c6bfbf;
+	border-color: #ddd #ccc #ccc #ddd;
+	border-top-color: rgb(221, 221, 221);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(221, 221, 221);
+	-moz-box-shadow: 4px 4px 12px #ccc;
+	-webkit-box-shadow: 4px 4px 12px #ccc;
+	box-shadow: 4px 4px 12px #ccc;
+	
+	
+}
+
+
+div.imagen-texto-right {
+	
+	float: right;
+	padding: 3px !important; 
+	width: 55%;
+	max-height: 700px;
+	margin-right: 30px;
+
+	border: 1px solid  #c6bfbf;
+	border-color: #ddd #ccc #ccc #ddd;
+	border-top-color: rgb(221, 221, 221);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(221, 221, 221);
+	-moz-box-shadow: 4px 4px 12px #ccc;
+	-webkit-box-shadow: 4px 4px 12px #ccc;
+	box-shadow: 4px 4px 12px #ccc;
+
+}
+
+
+div.imagen-texto img {
+		border: 1px solid #dbd6d6; 
+		width: 99%;
+	
+}
+
+
+
+div.imagen-texto-right img {
+		border: 1px solid #dbd6d6; 
+		width: 99%;
+	
+}
+
+
+div.imagen-texto-right-retrato {
+	
+	float: right;
+	padding: 3px !important; 
+	width: 42%;
+	max-height: 600px;
+	margin-right: 90px;
+
+	border: 1px solid  #c6bfbf;
+	border-color: #ddd #ccc #ccc #ddd;
+	border-top-color: rgb(221, 221, 221);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(221, 221, 221);
+	-moz-box-shadow: 4px 4px 12px #ccc;
+	-webkit-box-shadow: 4px 4px 12px #ccc;
+	box-shadow: 4px 4px 12px #ccc;
+
+}
+
+div.imagen-texto-right-retrato img{
+		border: 1px solid #dbd6d6; 
+		width: 99%;
+}
+
+
+
+div.caption {
+
+	border: none; 
+	line-height: 1.4em; 
+	font-size: 14px; 
+	padding: 3px !important; 
+	text-align: left;
+	overflow: auto;
+}
+
+
+
+/*Imagen sola*/
+
+
+div.imagen-sola {
+	
+padding: 1px !important; 
+width: 78%;
+margin-left: 11%;
+
+	border: 1px solid #c6bfbf;
+	border-color: #ddd #ccc #ccc #ddd;
+	border-top-color: rgb(221, 221, 221);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(221, 221, 221);
+	-moz-box-shadow: 4px 4px 12px #ccc;
+	-webkit-box-shadow: 4px 4px 12px #ccc;
+	box-shadow: 4px 4px 12px #ccc;
+		
+}
+
+div.imagen-sola img {
+		border: 1px solid #dbd6d6; 
+		width: 99%;
+		max-height: 70%;
+
+}
+
+
+
+
+
+/*LISTAS NUMERADAS Y SIN NUMERAR*/
+
+
+ul.menu_num  {
+	font-size: 1.4em;
+	list-style-type:disc;
+	color: #383d3d;
+	line-height: 1.2em;
+}
+
+ul.menu_num ul li {
+	list-style-type:circle;
+	font-size: 80%;
+	color: #383d3d;
+}
+
+
+ul.menu_none {
+
+	list-style-type: none;
+
+	}
+
+/*FOOTER*/
+
+
+.footer {
+
+
+color: #0072a7;	
+font-size: 12px;
+position: absolute;
+font:  Georgia, serif;
+left: 50%; top: 97%; bottom: auto; right: auto; 
+-webkit-transform: translate(-50%, -50%) scale(1.137857142857143);
+	
+}
+
+.footer a {
+	text-decoration:none; 
+	text-align:center; 
+	color: #5a5c5c;
+}
+
+.footer p {
+	text-align: center;	
+}
+
+
+
+
+/*INDICE de contenidos*/
+
+
+div.izquierda {
+
+float: left;
+
+}
+
+div.izquierda ul ul, .derecha ul ul {
+	list-style-type:circle;
+	font-size: 50%;
+}
+
+div.derecha {
+
+	float: right;
+
+	
+}
+
+
+div.izquierda  .weiter {
+	
+	margin-left: 0.3em;
+	color: #bdb7b6;
+	font-size: 70%;
+}
+
+div.derecha  .weiter {
+	
+	margin-left: 0.3em;
+	color: #bdb7b6;
+		font-size: 70%;
+}
+
+
+
+/*CITAS y FUENTES (referencias)*/
+
+.cita::before {
+display:block;
+height:10px; 
+content:url('../imagenes/comillas.png'); 
+opacity: 0.20;
+
+}
+
+.cita {
+text-align: justify;
+text-indent: 30px;
+
+}
+
+
+div.fuente {
+	
+text-align: right;
+color: gray;
+margin-top: 25px;
+font-size: 60%;
+}
+
+span.fuente {
+	
+text-align: right;
+color: gray;
+margin-top: 25px;
+font-size: 60%;
+}
+
+
+.fuente::before {
+
+content: "–" ;
+font-size: 120%;
+padding-right: 4px;
+}
+
+
+/* TWITTER para colocarlo en todas las diapositivas*/
+
+.twitter {
+	
+position: absolute; 
+top: 0; 
+left: 0; 
+border: 0; 
+height: 12%; 
+margin-left: 8px;
+}
+
+
+/*VARIA*/
+
+#filete {
+color: #8e0905;
+}
+
+
+.resaltado {
+
+   color:  black; /*color de las letras; aquí se puede quitar*/
+   background-color: #eeea62; /*color del fondo; una escala de grises, puede ir también en HEX, en este caso #E0E0E0; una variación del amarillo #FFFFCC*/
+}
+
+.creditos p{
+	text-align: center;
+}
+
+
+/*********************
+GRACIÁN-TRADUCCIONES
+*********************/
+
+
+h2.portada {
+	
+	  line-height: 1.5em;
+	
+}
+
+
+
+div.citas-om-es {
+
+background-color: #ebe9e9;
+padding: 8px; 	
+margin: 10px;
+text-align: justify;
+	 	
+ 	 	-webkit-border-radius:  0 1em 0 1em;
+ 	 	-ms-border-radius: 0 1em 0 1em;
+ 	 	 -o-border-radius: 0 1em 0 1em;
+ 	 	 border-radius: 0 1em 0 1em;
+
+}
+
+
+div.citas-om-de {
+
+background-color: #ebe9e9;
+padding: 8px; 	
+margin: 10px;
+text-align: justify;
+	 	
+ 	 	-webkit-border-radius:  0 1em 0 1em;
+ 	 	-ms-border-radius: 0 1em 0 1em;
+ 	 	 -o-border-radius: 0 1em 0 1em;
+ 	 	 border-radius: 0 1em 0 1em;
+
+
+	   }
+
+
+
+div.citas-om-pl {
+
+background-color: #ebe9e9;
+padding: 8px; 	
+margin: 10px;
+text-align: justify;
+	 	
+ 	 	-webkit-border-radius:  0 1em 0 1em;
+ 	 	-ms-border-radius: 0 1em 0 1em;
+ 	 	 -o-border-radius: 0 1em 0 1em;
+ 	 	 border-radius: 0 1em 0 1em;
+	   }
+
+
+div.citas-om-en {
+
+background-color: #ebe9e9;
+padding: 8px; 	
+margin: 10px;
+text-align: justify;
+	 	
+ 	 	-webkit-border-radius:  0 1em 0 1em;
+ 	 	-ms-border-radius: 0 1em 0 1em;
+ 	 	 -o-border-radius: 0 1em 0 1em;
+ 	 	 border-radius: 0 1em 0 1em;
+
+
+/*-moz-box-shadow: 4px 4px 12px #ccc;
+-webkit-box-shadow: 4px 4px 12px #ccc;
+box-shadow: 4px 4px 12px #ccc;*/
+
+	   }
+
+
+.citas-om-en::before {
+display:block;
+height:4px;
+font-size: 3em;
+content: 'en';
+opacity: 0.15;
+color: #ea00fd;
+}
+
+.citas-om-pl::before {
+display:block;
+height:4px;
+font-size: 3em;
+content: 'pl';
+opacity: 0.15;
+color: #cd1900;
+}
+
+.citas-om-de::before {
+display:block;
+height:4px;
+font-size: 3em;
+content: 'de';
+opacity: 0.15;
+color: #ff801b;
+}
+
+.citas-om-es::before {
+display:block;
+height:4px;
+font-size: 3em;
+content: 'es';
+opacity: 0.15;
+}

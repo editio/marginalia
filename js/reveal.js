@@ -52,7 +52,7 @@
 			progress: true,
 
 			// Display the page number of the current slide
-			slideNumber: false,
+			slideNumber: 'c / t',
 
 			// Push each slide change to the browser history
 			history: false,
