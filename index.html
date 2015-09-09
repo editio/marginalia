@@ -15,11 +15,11 @@
 		
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
-
+		<link rel="stylesheet" href="css/mis-cambios.css">
 		
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/github.css">
-		<link rel="stylesheet" href="css/mis-cambios.css">
+
 		<!-- Printing and PDF exports -->
 		<script>
 			var link = document.createElement( 'link' );
@@ -92,21 +92,18 @@ A la última actualización de reveal
 				<section >
 					<section id="bibliotheka">
 					
-					
 					<div class="imagen-sola">
 					
 					<img src="../manual/imagen/marginalia-bibliotheka.jpg"/>
 					
 						<div class="caption">Das Schopenhauer-Archiv zwischen 1965-1992 <a class="fuente" href="http://edocs.ub.uni-frankfurt.de/volltexte/2007/81000183/">© 2006 Universitätsbibliothek Frankfurt am Main </a>
 							</div>
-						
-						
+							
 					</div>	
 						
 					</section>  <!--Bibliotheka-->
 				
-				
-				<section id="huebscher">
+					<section id="huebscher">
 				
 				<div class="imagen-texto">
 				
@@ -501,56 +498,11 @@ A la última actualización de reveal
 				
 				<section id="model">
 				
-				<h3>Cyfrowy model oznakowania</h3>
+				<h3>Modelo de codificación</h3>
+				<h3>XML-TEI</h3>
 				
 				</section>  <!-- Cyfrowy model oznakowania -->
-				
-				<section>
-				
-				<div class="imagen-sola">
-				
-				<img src="../manual/imagen/marginalia-bigpicture_0.png"/>
-					<div class="caption"><a class="fuente" href="http://www.cceh.uni-koeln.de/files/Schmidt%20Slides.pdf">“The Role of Markup in the Digital Humanities”</a>, Desmond Schmidt, Queensland University of Technology, 2012</div>
-				</div>	
-				
-				</section>  <!-- BIG PICTURE Schmidt-->
-				
-				<section>
-				
-				<div class="imagen-sola">
-				
-				<img src="../manual/imagen/marginalia-xml-tei.png"/>
-				
-					<div class="caption">C. Schöch <a class="fuente" href="https://de.dariah.eu/tei-tutorial">Digitale Textedition mit TEI (Tutorial)</a>
-						</div>
-					
-					
-				</div>	
-				
-				</section>  <!-- TEI BUBBLE-->
-				
-				<section>
-				
-				<div class="imagen-texto">
-				
-				<img src="../manual/imagen/marginalia-tei-logo.jpg"/>
-				
-					<div class="caption"><a class="fuente" href="http://www.tei-c.org">TEI: Text Encoding Initiative</a></div>
-					
-					</div>
-				
-				<ul style="width: 60%; float: right;" >
-				<li>XML: Język znaczników do opisu struktury danych</li>
-				<li>TEI: Język znaczników do opisu struktury tekstów </li>
-				<li>Międzynarodowy standard</li>
-				<li>Wyłuskiwanie</li>  
-				<li>Przekształcanie </li>
-				<li>Sformatowania </li>
-				<li>Sortowania</li>
-				<li>...</li>
-				</ul>
-				
-				</section>  <!--TEI definition-->
+						
 				
 				<section id="tei-probe">
 				
@@ -575,10 +527,6 @@ A la última actualización de reveal
 				<pre><code>&lt;add type="gloss" hand="#Schop2" xml:lang="es" place="inline"&gt;Cumplido con esa regla, sobran las demas&lt;/add&gt;</code></pre>
 				
 				<pre><code>&lt;seg type="maxim" xml:id="138"&gt; &lt;num&gt;138&lt;/num&gt;. &lt;add hand="#Schop1" type="Unterstreichung"&gt; Arte de dexar estar&lt;/add&gt;.&lt;/seg&gt;</code></pre>
-				
-				<pre><code>&lt;note resp="editor"&gt;przypisy editora do konkretnego elementu&lt;/note&gt;</code></pre>
-				
-				
 				
 				
 					</section> <!--tei-probe-->
@@ -650,11 +598,7 @@ A la última actualización de reveal
 				
 				Własna implementacja: css
 				</h3>  
-				<pre style="font-size: 0.5em ; text-align: center;">
-				<code>/* marks visualization */ .marginalia-triple {
-				display: block;
-				padding-left: 12px;
-				border-left: 9px double red;</code></pre>
+				<pre style="font-size: 0.5em ; text-align: center;"><code>.marginalia-triple {display: block;padding-left: 12px;border-left: 9px double red;}</code></pre>
 				
 				
 				<div class="imagen-sola">
@@ -673,10 +617,7 @@ A la última actualización de reveal
 				
 				Własna implementacja: xslt
 				</h3>  
-				<pre style="font-size: 0.5em ; text-align: center;">
-				<code>&lt;xsl:for-each select="biblFull/titleStmt/author/persName"&gt;
-				      &lt;xsl:apply-templates select="surname"/&gt; &lt;xsl:text&gt;, &lt;/xsl:text&gt;
-				      &lt;xsl:apply-templates select="forename"/&gt;</code></pre>
+				<pre><code>&lt;xsl:for-each select="biblFull/titleStmt/author/persName"&gt; &lt;xsl:apply-templates select="surname"/&gt; &lt;xsl:text&gt;, &lt;/xsl:text&gt;&lt;xsl:apply-templates select="forename"/&gt;</code></pre>
 				
 				<div class="imagen-sola">
 				
@@ -694,9 +635,7 @@ A la última actualización de reveal
 				
 				Własna implementacja (indeks): xslt
 				</h3>  
-				<pre style="font-size: 0.5em ; text-align: center;">
-				<code>&lt;xsl:for-each select="//seg[@type = 'maxim' and 
-				ancestor::p//add[@type = 'Unterstreichung' or @type = 'Randstreichung']]"&gt;</code></pre>
+				<pre><code>&lt;xsl:for-each select="//seg[@type = 'maxim' and ancestor::p//add[@type = 'Unterstreichung' or @type = 'Randstreichung']]"&gt;</code></pre>
 				
 				
 				<div class="imagen-sola">

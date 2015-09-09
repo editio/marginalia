@@ -1,9 +1,33 @@
 /*Mis cambios*/
 
-/*#0072a7 :: color corporativo para cambiar en el theme (serif) correspondiente   */
+/*#0072a7 :: color corporativo de la Universidad para cambiar en el theme (serif) correspondiente   */
 
 /*Copio y modifico aquí algunos de los elementos del css del them serif.   miscambios.css overwrites it porque está el úlitmo en el header*/
 
+
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
+  border-right-color: #0072a7; }
+
+.reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
+  border-left-color: #0072a7; }
+
+.reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
+  border-bottom-color: #0072a7; }
+
+.reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
+  border-top-color: #0072a7; }
+
+
+.reveal .slide-number {
+  color: #0072a7 }
+
+.reveal .progress span {
+  background: #0072a7 ;
+ }
 
 .reveal a:not(.image) {
   color: inherit;
@@ -24,6 +48,16 @@ border-bottom: 1px gray dotted;
   border: none;
 }
 
+.reveal pre {
+	margin: 20px auto ;
+	background-color: rgba(255, 232, 0, 0.22);
+-webkit-border-radius: 1em ;
+-ms-border-radius: 1em;
+ -o-border-radius: 1em;
+border-radius: 1em;	
+
+}
+
 
 .reveal pre code {
 display: block; padding: 0.2em;
@@ -32,24 +66,10 @@ background: #f8f8ff;
 /*font-size: 0.5em ;*/
 display: block;
 max-height: 400px;
-word-wrap: break-word;  /*normal*/
+word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
 overflow: auto;
 }
 
-
-/*Contenedor para el numero de página total*/
-
-
-div.numero-pag-total {
-	
-
-position: fixed;
-display: block;
-right: 30px;
-bottom: 15px;
-opacity: 0.5;
-z-index: 31;
-font-size: 12px; }
 
 
 /*ICONO DEL MENÚ - arriba a la izquierda*/
