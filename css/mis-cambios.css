@@ -25,6 +25,18 @@ border-bottom: 1px gray dotted;
 }
 
 
+.reveal pre code {
+display: block; padding: 0.2em;
+color: #333;
+background: #f8f8ff; 
+font-size: 0.5em ;
+display: block;
+max-height: 400px;
+word-wrap: break-word;  /*normal*/
+overflow: auto;
+}
+
+
 /*Contenedor para el numero de página total*/
 
 
