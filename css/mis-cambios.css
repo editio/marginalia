@@ -366,7 +366,7 @@ position: absolute;
 font:  Georgia, serif;
 left: 50%; top: 97%; bottom: auto; right: auto; 
 -webkit-transform: translate(-50%, -50%) scale(1.137857142857143);
-	
+-moz-transform: translate(-50%, -50%) scale(1.137857142857143);	
 }
 
 .footer a {
