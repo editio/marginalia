@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8">
 		<title>Schopenhauer · Marginalia (ES)</title>
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="TEI & Marginalia">
+		<meta name="author" content="José Luis Losada">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -429,7 +429,7 @@ sobre la última actualización de reveal
 					<section>
 				
 				<div class="cita">
-					"attempts not simply to describe my own interpretations of Jonson's markings but, more importantly, to report every passage he marked so that other scholars can speculate for themselves and reach their own conclusions about the marks' significance" <span class="fuente">Evans, R. C., <i>Habits of Mind: Evidence and Effects of Ben Jonson’s Reading</i>, Bucknell University Press, 1995, p. 11.</span> </div>
+					"attempts not simply to describe my own interpretations of Jonson's markings but, more importantly, to report every passage he marked so that other scholars can speculate for themselves and reach their own conclusions about the marks' significance" <span class="fuente">Evans, <i>Habits of Mind: Evidence and Effects of Ben Jonson’s Reading</i>, 1995, p. 11.</span> </div>
 				
 				</section>  <!--cita de transición--> 
 				
@@ -588,7 +588,7 @@ sobre la última actualización de reveal
 				<section>
 
 				<h3>				
-				Implementación propia: css
+				Implementación: css
 				</h3>  
 				<pre style="font-size: 0.5em ; text-align: center;"><code>.marginalia-triple {display: block;padding-left: 12px;border-left: 9px double red;}</code></pre>
 				
@@ -600,29 +600,12 @@ sobre la última actualización de reveal
 				</section>
 				
 				
-				<section>
-				
-				<h3>
-				
-				Implementación propia: xslt
-				</h3>  
-				<pre><code>&lt;xsl:for-each select="biblFull/titleStmt/author/persName"&gt; &lt;xsl:apply-templates select="surname"/&gt; &lt;xsl:text&gt;, &lt;/xsl:text&gt;&lt;xsl:apply-templates select="forename"/&gt;</code></pre>
-				
-				<div class="imagen-sola">
-				
-				<img src="../manual/imagen/marginalia-xslt-header-drupal.png"/>
-				
-				</div>
-				
-				
-				</section>
-				
 				
 				<section>
 				
 				<h3>
 				
-				Implementación propia: (índice): xslt
+				Implementación (índice): xslt
 				</h3>  
 				<pre><code>&lt;xsl:for-each select="//seg[@type = 'maxim' and ancestor::p//add[@type = 'Unterstreichung' or @type = 'Randstreichung']]"&gt;</code></pre>
 				
