@@ -67,6 +67,8 @@ background: #f8f8ff;
 display: block;
 max-height: 400px;
 word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
+-ms-word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
+-webkit-word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
 overflow: auto;
 }
 

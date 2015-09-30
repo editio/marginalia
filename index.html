@@ -82,7 +82,7 @@ sobre la última actualización de reveal
 					<ul>
 					
 					  <li><a href="#/interpretacion">Interpretación</a><span class="weiter">↡(7)</span></li>	    
-						<li><a href="#/modelo">Modelo de marcado</a><span class="weiter">↡(5)</span></li>
+						<li><a href="#/modelo">Modelo de marcado</a><span class="weiter">↡(4)</span></li>
 						<li><a href="#/drupal">Publicación digital</a><span class="weiter">↡(5)</span></li>
 					  <li><a href="#/impressum"><i>Impressum</i></a></li>
 					</ul>
@@ -467,15 +467,70 @@ sobre la última actualización de reveal
 				
 				<pre><code>y podrá &lt;add type="Unterstreichung" hand="#Schop1" &gt;vivirse a&lt;lb/&gt; solas.&lt;/add&gt;</code></pre>
 				      
-				<pre><code>&lt;subst hand="#Schop2"&gt;&lt;del&gt;a&lt;lb type="hyphenInWord" break="no"/&gt;y&lt;/del&gt;&lt;add&gt;ej&lt;/add&gt;&lt;/subst&gt;</code></pre>
+				<pre><code><subst hand="#Schop2"><del>a<lb type="hyphenInWord" break="no"/>y</del><add>ej</add></subst></code></pre>
 				      
-				<pre><code>&lt;add type="gloss" hand="#Schop2" xml:lang="es" place="inline"&gt;Cumplido con esa regla, sobran las demas&lt;/add&gt;</code></pre>
+				<pre><code><add type="gloss" hand="#Schop2" xml:lang="es" place="inline">Cumplido con esa regla, sobran las demas</add></code></pre>
 				
 				<pre><code>&lt;seg type="maxim" xml:id="138"&gt; &lt;num&gt;138&lt;/num&gt;. &lt;add hand="#Schop1" type="Unterstreichung"&gt; Arte de dexar estar&lt;/add&gt;.&lt;/seg&gt;</code></pre>
 				
 				
 					</section> <!--tei-probe-->
 				
+				
+				
+								
+				
+				
+				<section id="teiHeader">
+				<h3>&lt;teiHeader&gt;</h3>
+				<pre><code><profileDesc>
+<!-- ... -->
+<handNotes>
+<handNote xml:id="Schop1" scribe="ArthurSchopenhauer"
+	script="handwritten" medium="pencil" scope="major">
+	<p>Marcas, en lápiz, de Arthur Schopenhauer</p>
+	</handNote>
+<handNote xml:id="Schop2" scribe="ArthurSchopenhauer"
+	script="handwritten" medium="ink" scope="minor">
+	<p>Marcas, en tinta, de Arthur Schopenhauer</p>
+	</handNote>
+<!-- ... -->
+	</handNotes>
+</profileDesc></code></pre>
+				
+				</section>
+				
+<section id="ODD">
+				
+					<h3>TEI ODD</h3>
+<pre><code><elementSpec ident="add" module="core">
+<attList>
+<!-- -->
+<attDef ident="type" usage="req">
+<desc>Types of marking - marginalia added on a book</desc>
+		<valList type="closed">
+			<valItem ident="Unterstreichung"></valItem>
+			<valItem ident="Randstreichung"></valItem>
+			<valItem ident="Korrektur"></valItem>
+			<valItem ident="Glosse"></valItem>
+		</valList>
+</attDef>
+	                        
+<attDef ident="subtype">
+<desc>Marking's intensity - type of gloss</desc>
+		<valList type="open" mode="replace">
+  		<valItem ident="simple"></valItem>
+			<valItem ident="doble"></valItem>
+			<valItem ident="triple"></valItem>
+			<valItem ident="ref"></valItem>
+			<valItem ident="quote"></valItem>
+		</valList>
+	</attDef>
+
+</attList>
+</elementSpec></code></pre>
+				
+				</section>
 				
 				
 				</section>  <!--FIN model zaznakowanie-->
