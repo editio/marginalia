@@ -70,6 +70,16 @@ word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
 -ms-word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
 -webkit-word-wrap: break-word;  /*tenía: normal, entonces hace scrool*/
 overflow: auto;
+
+/*añadido todo sin más para que no haga scroll en Firefox */ 
+
+word-break: break-all; /* webkit */
+word-wrap: break-word;
+white-space: pre;
+white-space: -moz-pre-wrap; /* fennec */
+white-space: pre-wrap;
+white-space: pre\9; /* IE7+ */
+
 }
 
 
