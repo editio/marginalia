@@ -365,6 +365,10 @@ ul.menu_none {
 	list-style-type: none;
 
 	}
+	
+	ul li {
+			font-size: 4em;
+	}
 
 /*FOOTER*/
 
@@ -403,31 +407,27 @@ float: left;
 
 }
 
-div.izquierda ul ul, .derecha ul ul {
+div.izquierda ul, .derecha ul {
 	list-style-type:circle;
-	font-size: 50%;
+	
+	font-size: 90%;
+
 }
 
 div.derecha {
-
-	float: right;
-
-	
-}
+	float: right;}
 
 
 div.izquierda  .weiter {
-	
 	margin-left: 0.3em;
 	color: #bdb7b6;
 	font-size: 60%;
-}
+	}
 
-div.derecha  .weiter {
-	
+div.derecha  .weiter {	
 	margin-left: 0.3em;
 	color: #bdb7b6;
-		font-size: 70%;
+		font-size: 60%;
 }
 
 
