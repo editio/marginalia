@@ -425,26 +425,33 @@ sobre la última actualización de reveal
 <pre><code><elementSpec ident="add" module="core">
 <attList>
 <!-- -->
-<attDef ident="type" usage="req">
-<desc>Types of marking - marginalia added on a book</desc>
-		<valList type="closed">
-			<valItem ident="Unterstreichung"></valItem>
-			<valItem ident="Randstreichung"></valItem>
-			<valItem ident="Korrektur"></valItem>
-			<valItem ident="Glosse"></valItem>
-		</valList>
+<attList>
+<attDef ident="type" mode="change">
+  <desc>(JLL) Any manuscript addition visible on the book. The attributes give the type
+    of addition </desc>
+  <valList type="closed" mode="replace">
+    <valItem ident="Unterstreichung"/>
+    <valItem ident=" Korrektur"/>
+    <valItem ident=" Randstreichung"/>
+    <valItem ident=" Glosse"/>
+    <valItem ident=" Gekritzel"/>
+  </valList>
 </attDef>
-	                        
-<attDef ident="subtype">
-<desc>Marking's intensity - type of gloss</desc>
-		<valList type="open" mode="replace">
-			<valItem ident="simple"></valItem>
-			<valItem ident="doble"></valItem>
-			<valItem ident="triple"></valItem>
-			<valItem ident="index"></valItem>
-			<valItem ident="quote"></valItem>
-		</valList>
-	</attDef>
+<attDef ident="subtype" mode="change">
+  <desc>(JLL) subcategorise the @type (Unterstreichung, Korrektur, etc.) with another
+    @subtype</desc>
+  <valList type="closed" mode="replace">
+    <valItem ident="simple"/>
+    <valItem ident=" triple"/>
+    <valItem ident=" doble"/>
+    <valItem ident=" index"/>
+    <valItem ident=" statment"/>
+    <valItem ident=" quote"/>
+    <valItem ident=" faces"/>
+    <valItem ident=" doodle"/>
+  </valList>
+</attDef>
+</attList>
 
 
 <attdef ident="ana">
