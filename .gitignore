@@ -1,6 +1,20 @@
+<<<<<<< HEAD
+=======
+.idea/
+*.iml
+*.iws
+*.eml
+out/
+>>>>>>> hakimel/dev
 .DS_Store
 .svn
 log/*.log
 tmp/**
 node_modules/
+<<<<<<< HEAD
 .sass-cache
+=======
+.sass-cache
+css/reveal.min.css
+js/reveal.min.js
+>>>>>>> hakimel/dev
