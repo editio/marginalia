@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+		<title>Workshop · Digital Editions with TEI</title>
+		<meta name="description" content="Workshop · Digital Editions with TEI">
+		<meta name="author" content="José Luis Losada">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		
+		<link rel="apple-touch-icon" type="image/png" href="../manual/imagen/edigital.png"> 
+		
+		<link rel="shortcut icon" type="image/x-icon" href="../manual/imagen/favicon.ico">
+		
+		<!-- Hojas de estilo-->
+		
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/serif.css" id="theme">
+		<link rel="stylesheet" href="css/mis-cambios.css">
+				
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/github.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+<!-- 8-11.09.2015
+sobre la última actualización de reveal
+1. He copiado sin mas desde la 1 <section> hasta la última de manual/marginalia.html (la versión polaca)
+2. He añadido mis-cambios.css que tenía antes.
+-->
+				
+				<section>
+				
+					<section id="portada">  
+				
+					   		    <h2 class="portada">     
+General introduction to Digital Scholarly Editions. <h3> Terminology, examples, evaluation, reference model</h3>
+								</h2><h1><span id="filete">☰</span></h1>
+				   		</section>  <!--FIN PORTADA-->
+				
+				<!--INDICE-->
+				
+					<section id="indice">  <!--ID de las secciones realmente solo para hacer enlaces-->
+				
+					<h3>Content</h3>
+					
+					<div class="izquierda">
+					
+					<ul>
+					    <li><a href="#/portada">Frontmatter</a><span class="weiter">↡(2)</span></li>
+					    <li><a href="#/terminology">Terminology</a><span class="weiter">↡(8)</span></li>
+					    <li><a href="#/digital">Digital edition</a><span class="weiter">↡(*)</span></li>
+					    <li><a href="#/examples">Examples</a><span class="weiter">↡(*)</span></li>
+				    
+					</ul>
+					
+						</div>
+					
+					<div class="derecha">
+					
+					<ul>
+					  <li><a href="#/criteria">Criteria</a><span class="weiter">↡(*)</span></li>	    
+						<li><a href="#/model">Reference Model</a><span class="weiter">↡(*)</span></li>
+						<li><a href="#/biblio">Biblio</a><span class="weiter">↡(*)</span></li>
+					  <li><a href="#/impressum"><i>Impressum</i></a></li>
+					</ul>
+						
+						</div>
+						</section> <!--FIN INDICE-->
+				     			      			
+				</section> <!--FIN PORTADA E INDICE-->
+										
+<section >
+	
+	<section id="terminology">
+				
+				<h3>Our subject: edition</h3>
+						</br>
+				<ul>
+				<li> Different terminology, </li>
+				<li> different traditions, </li>
+				<li> different languages, </li>  	
+				<li> different periods. </li>  					
+				
+				</ul>
+		
+		</br>
+		</br>
+
+		<span style="font-size: 1.5 ; color: red;">~</span> Edición crítica, naukowa edycja krytyczna, Scholarly Edition, Historisch-kritische Ausgabe 	<span style="font-size: 1.5 ; color: red;">~</span> 
+				</section>
+
+
+	<section>
+			
+		<h3>What is a Scholarly Edition</h3>
+
+		<h5>The scholarly edition's basic task is to present a <span class="resaltado">reliable text</span></h5>
+		<ul>
+			<li> general introduction: either historical or interpretive</li>
+			<li> Statements concerning the history & composition of the text </li>
+			<li> textual apparatus or notes documenting alterations and variant readings </li>  	
+					</ul>
+		
+		<div class="fuente">
+		<a href="http://www.tei-c.org/About/Archive_new/ETE/Preview/guidelines.xml">Burnard et alii: 2007</a>
+		</div>
+		
+			</section>
+			
+	<section>
+						
+					<h3>How is a Scholarly Edition done?</h3>
+				
+			<p class="cita"> "a scholarly edition is one that follows <span class="resaltado">scholarly method</span> and purpose, that is undertaken with professional <span class="resaltado">critical judgment</span> and the fullest possible understanding of the relevant primary materials, and that provides clear documentary evidence of the relations and contexts of those primary materials" </p> 
+			 <div class="fuente"> <a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/">Committee on Scholarly Editions - MLA</a> & <a href="https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions">Guidelines for Editors of Scholarly Editions </a>
+			 	</div>
+			 				
+			</section>
+			
+	<section>
+						
+					<h3>Textual Criticism</h3>
+								
+			<span style="font-size: 1.5 ; color: red;">~</span> Editionswissenschaft,	Scholarly Editing, Critique génétique, Filologia d’autore, Ecdótica 	<span style="font-size: 1.5 ; color: red;">~</span> 
+			</section>
+			
+	<section>
+	
+			<h3>Lachmann’s method</h3>
+			<h5>(German tradition)</h5>
+			
+			<div class="imagen-texto">
+			
+			<img src="imagenes/editio-Priego-1997-65.png"/>
+			
+			<div class="caption">example of <i>stemma</i> (Pérez 1997: 97)</div>
+			
+			</div>	
+			
+			<ul style="width: 60%; float: right;" >
+			<li>reconstructing the (original) text based on different <a href="https://wiki.hiit.fi/display/stemmatology/Witness">witnesses</a></li>   <!--(surviving sources)-->
+			<li>witnesses are grouped hierarchically in order to compile a genealogical tree (<a href="https://wiki.hiit.fi/display/stemmatology/Stemma">stemma</a>)</li>
+			<li>genealogical tree is based on <a href="https://wiki.hiit.fi/display/stemmatology/Error">typology of errors</a></li>
+				<li>Dogmatism</li>
+				 </br>
+			
+			<div class="fuente">
+			<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
+			</div>
+			</ul>
+
+		</section>		
+	
+	<section>
+				
+			<h3><i>Bon manuscrit</i></h3>
+				<h5>(French tradition)</h5>
+		 		</br>
+			<ul>
+				<li> Joseph Bédier's scepticism on stemmatics</li>
+				<li> Edition based on the earliest or best preserved manuscript (<a href="https://wiki.hiit.fi/display/stemmatology/Codex+optimus">codex optimus</a>)</li>
+				<li> Historical & cultural analysis of the text tradition</li>
+				
+ 					</ul>
+			
+			<div class="fuente">
+			<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
+				</div>
+			
+		</section>
+		
+	<section>
+					
+				<h3>Copy-text theory</h3>
+					<h5>(Anglo-American tradition)</h5>
+					 </br>
+				<ul>
+					<li> printed edition closest to the author’s intention</li>
+					<li> autograph manuscript & printed edition (combined) </li>
+					</ul>
+				
+				<div class="fuente">
+				<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
+				</div>
+		</section>
+		
+	<section>
+					
+				<h3>Methods related to type of documents</h3>
+									 </br>
+				<ul>
+					<li> stemmatics: medieval and classical texts preserved in manuscripts.</li>
+					<li> copy-text: modern print materials </li>
+					<li> genetics: authorial drafts and contemporary authors (edition ≃ <a href="http://uahost.uantwerpen.be/lse/index.php/lexicon/genetic-dossier/">genetic dossier</a>)</li>			
+					</ul>
+					
+				
+				<div class="fuente">  Pierazzo 2015: 17  & <a href="http://uahost.uantwerpen.be/lse/">Lexicon of Scholarly Editing</a>
+				</div>
+		</section>
+					
+				<!--<li >substantive & accidentals <a href="http://uahost.uantwerpen.be/lse/index.php/lexicon/variant/">variants (readings)</a> </li>-->  
+				
+				
+<!-- FIN DE Terminology -->
+
+</section>
+							
+	<section>
+				<section id="digital">
+				
+				<h3>Digital editions</h3>
+				<ul>
+					<li> Digital scholarly editions are not just scholarly editions in digital media: digital ≠ digitized</li>
+
+					<li> A digital edition can not be printed without a loss of information and/or functionality </li>
+					
+					<li> Different to the book paradigm (two-dimensional space of the "page")</li>
+					
+					</ul>
+								<div class="fuente">Pierazzo: 2015 & Sahle: 2013</a>
+											</div>
+			</section>				
+											
+				
+				
+	</section>  <!--fin digital-->
+				
+				
+				<section> <!-- examples	-->
+				
+				<section>
+				<h3>Examples of SDE</h3>
+				
+				</section>
+				
+				
+									<section> <!--projects-->
+									
+									<h3>Drama editions</h3>
+									
+									<div class="imagen-sola">
+									
+									<img src="../manual/imagen/***.jpg"/>
+									
+										<div class="caption">Johann Wolfgang Goethe: <i>Faust</i> Historisch-kritische Edition <a class="fuente" href="http://beta.faustedition.net">http://beta.faustedition.net</a>
+											</div>
+										
+										
+									</div>
+									
+									</section>  
+									<section> <!--projects-->
+									
+																
+									<div class="imagen-sola">
+									
+									<img src="../manual/imagen/***.jpg"/>
+									
+										<div class="caption">Félix Lope de Vega y Carpio: <i>El animal de Hungría</i> <a class="fuente" href="http://artelope.uv.es/biblioteca">http://artelope.uv.es/biblioteca</a>
+											</div>
+										
+										
+									</div>
+									
+									</section>  
+
+								
+									<section>
+									
+									<h3>Correspondence editions</h3>
+									
+									<div class="imagen-sola">
+									
+									<img src="../manual/imagen/***"/>
+									
+										<div class="caption">Vincent van Gogh The Letters </i><a class="fuente" href="http://vangoghletters.org">http://vangoghletters.org</a>
+											</div>
+																			
+									</div>
+									
+									
+									</section>   									
+									
+									
+									<section><div class="imagen-sola">
+									
+									<img src="../manual/imagen/***"/>
+									
+										<div class="caption">Korpus Tekstów i Korespondencji Jana Dantyszka </i><a class="fuente" href="http://dantiscus.ibi.uw.edu.pl">http://dantiscus.ibi.uw.edu.pl</a>
+											</div>
+																			
+									</div></section>
+									
+									
+									
+									<section >
+									
+									<h3>Genetic editions</h3>
+																		  
+									<div class="imagen-sola">
+									
+									<img src="imagenes/***"/>
+									
+										<div class="caption"><i>Manuscrito digital de Juan Goytisolo</i> <a class="fuente" href="http://www.goytisolo.unibe.ch"> http://www.goytisolo.unibe.ch</a>
+											</div>
+										
+										
+									</div>
+									
+									
+									</section>  
+									
+									
+									<section id="whitmann">
+									
+									<h3>Complete Works</h3>
+																		  
+									<div class="imagen-sola">
+									
+									<img src="imagenes/***"/>
+									
+										<div class="caption"><i>The Walt Whitman Archive</i> <a class="fuente" href="http://www.whitmanarchive.org"> http://www.whitmanarchive.org</a>
+											</div>
+										
+										
+									</div>
+									
+									
+									</section>  
+									
+									<section >
+									
+									<h3>Collaborative editions</h3>
+																		  
+<!--<p>	"a team of selected scholars, experts in the field, lead by one or more chief editors, share principles, tools and resources in the preparation of a (usually) multi-volume edition" (Pierazzo, 2015: 24-25)  </p>-->
+																		  
+																		  
+									<div class="imagen-sola">
+									
+									<img src="imagenes/***"/>
+									
+										<div class="caption"><i>Arthur Schnitzler digital.</i> Digitale historisch-kritische Edition (Werke 1905 bis 1931)   <a class="fuente" href="http://www.arthur-schnitzler.de">http://www.arthur-schnitzler.de</a>
+											</div>
+										
+										
+									</div>
+									
+									
+									</section>  
+									
+									
+									<section >
+									
+									<h3>Social Editions</h3>
+									
+									<p class="cita">	"is to offer the text to the community not only for contributions such as annotation, comments, and translations but also for the editing of existing texts or the addition of new texts [...] The community that produces the text or enriches it can be controlled or uncontrolled"</p>
+									<div class="fuente">(Pierazzo, 2015: 24-25)</div>						 																		  
+																		 																		  
+																
+									
+									</section>  
+									
+									<section >
+																											
+									<div class="imagen-sola">
+									
+									<img src="../manual/imagen/marginalia-abo.jpg"/>
+									
+										<div class="caption">Harvey’s copy of Livy’s <i>Histories</i> <a class="fuente" href="http://www.annotatedbooksonline.com">http://www.annotatedbooksonline.com</a>
+											</div>
+										
+										</div>
+												 														
+									</section>  
+																	
+															<section >
+															
+															<h3>Documentary editions</h3>
+															
+															<ul>
+															<il>definition: Dokumentarische Edition, Archivausgabe
+															</il>
+																										</ul>
+															
+															<p class="cita">"auf Interpretation überall verzichtet wird, wo es nur möglich ist. An ihre Stelle tritt das Paradigma der reinen Dokumentation der Befunde"
+															</p>
+															<div class="fuente">(Sahle 2013, I, 214)</div>						 																		  
+																								 																		  
+																						
+															</section>  
+				
+				</section> <!--fin examples-->
+				
+				<section>
+				<h3>Guidelines for quality criteria</h3>
+				
+				</section>
+		
+		<section>
+		<h3>Reference Model for Digital Editing</h3>
+		
+		</section>
+															   		       
+																	<!--
+																	*****************
+																	*****CREDITOS****	
+																	*****************
+																	-->
+				      
+				<section id="impressum">
+				
+				
+					 <div class="creditos">	    		    
+						   </br>
+					 	 	 
+					 <p><a href="http://www.ifr.uni.wroc.pl/pl/nasz-instytut/pracownicy/dr-jose-luis-losada-palenzuela">José Luis Losada Palenzuela</a></p> 
+					 <p>Uniwersytet Wrocławski - 2016</p>
+					 <p>jose-luis.losada@uwr.edu.pl</p>
+					 </div>
+					 
+					 <h2 id="filete">✽</h2>
+					 	
+				</section> <!--CRÉDITOS-->
+				
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+<!--ESQUINAS MENU en TODAS DIAS-->
+		
+<div class="footer">
+
+<p> José Luis Losada Palenzuela · Uniwersytet Wrocławski</p>
+					
+</div> <!--FIN FOOTER FIRMA-->
+
+
+<div id="menu">
+   <a href="#/indice">☰</a> 
+</div>   <!--FIN INDICE-->
+ 
+ 
+ <div id="logo">
+    <a href="http://www.uni.wroc.pl"><img src="imagenes/logo_UWr_wer_rozsz_P3015.png" title="Índice"/></a> 
+ </div> <!--FIN LOGO-->
+
+
+	</body>
+</html>
+
+
+
+

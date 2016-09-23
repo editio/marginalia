@@ -82,6 +82,15 @@ white-space: pre\9; /* IE7+ */
 
 }
 
+/* el theme serif tiene un tono de gris*/
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+
+  color: black;
+ }
+
+
+
 
 
 /*ICONO DEL MENÚ - arriba a la izquierda*/
