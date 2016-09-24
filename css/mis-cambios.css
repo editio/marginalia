@@ -4,8 +4,6 @@
 
 /*Copio y modifico aquí algunos de los elementos del css del them serif.   miscambios.css overwrites it porque está el úlitmo en el header*/
 
-
-
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
@@ -136,9 +134,6 @@ font-size: 1.3em;
 /*LOGO  - arriba a la derecha*/
 
 
-
-
-
 #logo {
 	 	top: -7px;
 	 	right: -12px;
@@ -216,6 +211,37 @@ float: right;
 .imagen { 
 	height: 600px;
 		
+}
+
+
+/*3 imagenes on one slide*/
+
+div.imagen-3 {
+	
+	float: left;
+	padding: 4px !important; 
+	width: 26%;
+	max-height: 700px;
+	margin-right: 60px;
+	
+		
+	border: 1px solid #c6bfbf;
+	border-color: #ddd #ccc #ccc #ddd;
+	border-top-color: rgb(221, 221, 221);
+	border-right-color: rgb(204, 204, 204);
+	border-bottom-color: rgb(204, 204, 204);
+	border-left-color: rgb(221, 221, 221);
+	-moz-box-shadow: 4px 4px 12px #ccc;
+	-webkit-box-shadow: 4px 4px 12px #ccc;
+	box-shadow: 4px 4px 12px #ccc;
+	
+	
+}
+
+div.imagen-3 img {
+		border: 1px solid #dbd6d6; 
+		width: 99%;
+	
 }
 
 
@@ -554,9 +580,7 @@ text-align: justify;
  	 	 -o-border-radius: 0 1em 0 1em;
  	 	 border-radius: 0 1em 0 1em;
 
-
 	   }
-
 
 
 div.citas-om-pl {
