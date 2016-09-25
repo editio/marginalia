@@ -4,6 +4,15 @@
 
 /*Copio y modifico aquí algunos de los elementos del css del them serif.   miscambios.css overwrites it porque está el úlitmo en el header*/
 
+
+/*Imagenes solas*/
+
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 23px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
