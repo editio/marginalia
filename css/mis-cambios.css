@@ -9,9 +9,15 @@
 
 .reveal section img {
   margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 23px solid #000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
+  border: 1px solid #c6bfbf;
+  border-color: #ddd #ccc #ccc #ddd;
+  border-top-color: rgb(221, 221, 221);
+  border-right-color: rgb(204, 204, 204);
+  border-bottom-color: rgb(204, 204, 204);
+  border-left-color: rgb(221, 221, 221);
+  -moz-box-shadow: 4px 4px 12px #ccc;
+  -webkit-box-shadow: 4px 4px 12px #ccc;
+  box-shadow: 4px 4px 12px #ccc; }
 
 /*********************************************
  * NAVIGATION CONTROLS
