@@ -14,7 +14,7 @@ bibl title, editor, pubPlace, publisher, date, author {
 	text-align: left;
 }
 
-fileDesc, titleStmt, publicationStmt, sourceDesc, profileDesc, respStmt, revisionDesc, item {
+fileDesc, titleStmt, publicationStmt, sourceDesc, profileDesc, respStmt, revisionDesc, item, normalization {
 	color: gray;
   display: block;
   margin: 10px;

@@ -1,0 +1,27 @@
+
+- Open oXygen
+- Open new document
+- Search or select a document type
+· Framework templates
+· TEI P5
+·· TEI All [TEI P5]
+- [optional: Save it & rename it]
+- [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
+
+
+Encoding:
+
+
+Visualization css & the browser
+
+same steps applied as exercise 1   
+
+Publication:
+
+same steps applied as exercise 1
+
+Enconding metadata:
+
+<normalization>
+
+<repository>
