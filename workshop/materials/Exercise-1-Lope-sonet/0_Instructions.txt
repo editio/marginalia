@@ -1,0 +1,44 @@
+
+- Open oXygen
+- Open new document
+- Search or select a document type
+· Framework templates
+· TEI P5
+·· TEI All [TEI P5]
+- [optional: Save it & rename it]
+- [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
+
+
+Encoding:
+
+Soneto (how to proceed)
+
+<lg>
+<l>
+
+<lg type="soneto">
+<lg type="cuarteto">
+<lg type="terceto">
+
+<l n="1">
+
+Visualization css & the browser
+
+- add a css stylesheed
+- play around with it
+- First capital letter: encode original? 
+
+
+Publication:
+
+- Configure transformation scenarios (/Document>transformation>Configure transformation scenarios)
+- Apply transformation scenarios (/Document>transformation>Apply transformation scenarios)
+...
+Does not work docx, odt (el texteditor normal sí los abre. Se puede volver a grabar desde allí)
+Does not work: pdf polish encoding
+
+
+Enconding metadata:
+
+<sourceDesc>
+        <bibl>

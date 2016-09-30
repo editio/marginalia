@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-stylesheet type="text/css" href="vizualize-tei-xml.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Vn ſoneto me manda hazer Violante</title>
+            <author>Lope de Vega Carpio</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Workshop's materials (Wrocław)</publisher>
+            <date>14/10/2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <author>Lope de Vega Carpio</author>
+               <title>La niña de la plata, Parte IX de Comedias de Lope de Vega</title>
+               <pubPlace>Madrid</pubPlace>
+               <date>1917</date>
+            </bibl>
+            <msDesc>
+               <msIdentifier>
+                  <repository ref="https://books.google.it/books?id=GbtdAAAAcAAJ">Google
+                     Books</repository>
+               </msIdentifier>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg type="soneto">
+            <lg type="cuarteto">
+               <l n="1"><choice>
+                     <orig>Vn ſoneto</orig>
+                     <reg>Un soneto</reg>
+                  </choice> me manda <choice>
+                     <orig>hazer</orig>
+                     <reg>hacer</reg>
+                  </choice> Violante,</l>
+               <l n="2">que en mi vida me he <choice>
+                     <orig>viſto</orig>
+                     <reg>visto</reg>
+                  </choice> en tanto aprieto,</l>
+               <l n="3"><choice>
+                     <orig>catorze verſos dizen</orig>
+                     <reg>catorce versos dicen</reg>
+                  </choice> que es <choice>
+                     <orig>ſoneto</orig>
+                     <reg>soneto</reg>
+                  </choice>,</l>
+               <l n="4">burla burlando van los tres delante.</l>
+            </lg>
+
+            <lg type="cuarteto">
+               <l n="5">Yo <choice>
+                     <orig>penſe</orig>
+                     <reg>pensé</reg>
+                  </choice> que no hallara <choice>
+                     <orig>conſonante</orig>
+                     <reg>consonante</reg>
+                  </choice>,</l>
+               <l n="6">y <choice>
+                     <orig>eſtoy</orig>
+                     <reg>estoy</reg>
+                  </choice> a la mitad de otro <choice>
+                     <orig>quarteto</orig>
+                     <reg>cuarteto</reg>
+                  </choice>,</l>
+               <l n="7">mas <choice>ſi</choice> me veo en el primer terceto,</l>
+               <l n="8">no <choice>ay coſa</choice> en los <choice>quartetos</choice> que me
+                     <choice>eſpante</choice>.</l>
+            </lg>
+
+            <lg type="terceto">
+               <l n="9">Por el primer terceto voy entrando,</l>
+               <l n="10">y parece que <choice>entrè</choice> con pie derecho,</l>
+               <l n="11">pues fin con <choice>eſte verſo</choice> le voy dando.</l>
+            </lg>
+
+            <lg type="terceto">
+               <l n="12">Ya <choice>eſtoy</choice> en el <choice>ſegundo</choice>, y aun
+                     <choice>ſoſpecho</choice></l>
+               <l n="13">que voy los <choice>treze verſos</choice> acabando,</l>
+               <l n="14">contad <choice>ſi ſon cartorze</choice>, y <choice>eſtà</choice> hecho.</l>
+            </lg>
+         </lg>
+      </body>
+   </text>
+</TEI>

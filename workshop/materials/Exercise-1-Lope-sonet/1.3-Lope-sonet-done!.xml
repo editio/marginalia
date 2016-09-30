@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+
+<?xml-stylesheet type="text/css" href="vizualize-tei-xml.css"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Bym złożył sonet, Violente mię prosi</title>
+            <author>Lope de Vega Carpio</author>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Workshop's materials (Wrocław)</publisher>
+            <date>14/10/2016</date>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+               <title>Sonety hiszpańskie</title>
+               <editor role="tłumacz">Jan Winczawiewicz</editor>
+               <pubPlace>Londyn</pubPlace>
+               <publisher>Oficyna Poetów i Malarzy</publisher>
+               <date>1965</date>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <lg type="soneto">
+            <lg type="cuarteto">
+               <l n="1"><hi rend="bold">B</hi>ym złożył sonet, Violente mię prosi;</l>
+               <l n="2">nierazem znoił w takowym rygorze:</l>
+               <l n="3">czternaście wierszów sonet pojąć może.</l>
+               <l n="4">Trzy z przodka fraszka ze śmiechem unosi.</l>
+            </lg>
+
+            <lg type="cuarteto">
+               <l n="5">Trapiąc się, jaki rym tutaj położę,</l>
+               <l n="6">do drugiej strofy dobiegam w rozpędzie.</l>
+               <l n="7">Niech mi tercyna z odsieczą przybędzie,</l>
+               <l n="8">a oną strofą nic się nie zatrwożę.</l>
+            </lg>
+
+            <lg type="terceto">
+               <l n="9">W pierwszą tercynę wchodzę i chociażem</l>
+               <l n="10">za próg przełożył, zda się, jedną nogę,</l>
+               <l n="11">już tę tercynę gładko zamknąć mogę.</l>
+            </lg>
+
+            <lg type="terceto">
+               <l n="12">Drugiej dostawszy, z jednakim kurażem</l>
+               <l n="13">– chocia naprzeciw wiersz trzynasty bieży –</l>
+               <l n="14">czternasty-m skroił! Licz kto mi nie wierzy!</l>
+            </lg>
+         </lg>
+      </body>
+   </text>
+</TEI>
