@@ -31,7 +31,10 @@
       <body>
          <lg type="soneto">
             <lg type="cuarteto">
-               <l n="1"><hi rend="bold">B</hi>ym złożył sonet, Violente mię prosi;</l>
+               <l n="1"><hi rend="bold">B</hi>ym złożył sonet, <choice>
+                     <orig>Violente</orig>
+                     <reg>Violante</reg>
+                  </choice> mię prosi;</l>
                <l n="2">nierazem znoił w takowym rygorze:</l>
                <l n="3">czternaście wierszów sonet pojąć może.</l>
                <l n="4">Trzy z przodka fraszka ze śmiechem unosi.</l>

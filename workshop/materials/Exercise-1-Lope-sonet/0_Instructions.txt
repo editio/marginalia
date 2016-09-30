@@ -55,6 +55,11 @@ You need to add these elements:
 
 Look up for <choice>, <orig> or <reg> in the TEI Guidelines.
 
+
 Did you finish already (again)?
 
+The first letter in the original is highlighted. Do we encode it?
 
+You need to add this element:
+
+Look up for <hi> in the TEI Guidelines and also the attribute @rend.
