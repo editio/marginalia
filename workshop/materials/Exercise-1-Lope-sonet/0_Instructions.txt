@@ -1,3 +1,4 @@
+Tool
 
 - Open oXygen
 - Open new document
@@ -9,9 +10,9 @@
 - [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
 
 
-Encoding:
+Encoding
 
-Soneto (how to proceed)
+You need to add these elements and attributes:
 
 <lg>
 <l>
@@ -29,7 +30,9 @@ Visualization css & the browser
 - First capital letter: encode original? 
 
 
-Publication:
+Publication.
+
+Go to the application menu bar to: 
 
 - Configure transformation scenarios (/Document>transformation>Configure transformation scenarios)
 - Apply transformation scenarios (/Document>transformation>Apply transformation scenarios)
@@ -38,7 +41,8 @@ Does not work docx, odt (el texteditor normal sí los abre. Se puede volver a gr
 Does not work: pdf polish encoding
 
 
-Enconding metadata:
+Encoding metadata.
 
-<sourceDesc>
-        <bibl>
+You need to add these elements:
+
+<bibl>

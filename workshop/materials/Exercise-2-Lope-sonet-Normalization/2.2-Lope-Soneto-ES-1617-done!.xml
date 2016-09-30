@@ -5,8 +5,6 @@
 
 <?xml-stylesheet type="text/css" href="vizualize-tei-xml.css"?>
 
-
-
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -44,7 +42,6 @@
                   Silent h and acute accent (instead of grave accent), have beed added if necessary.</p>
             </normalization>
          </editorialDecl>
-
 
       </encodingDesc>
    </teiHeader>

@@ -1,3 +1,4 @@
+Tool
 
 - Open oXygen
 - Open new document
@@ -11,14 +12,19 @@
 
 Encoding:
 
+You need to add these elements:
+
+<choice>
+<orig>
+<reg>
 
 Visualization css & the browser
 
-same steps applied as exercise 1   
+same steps applied as in exercise 1   
 
 Publication:
 
-same steps applied as exercise 1
+same steps applied as in exercise 1
 
 Enconding metadata:
 
