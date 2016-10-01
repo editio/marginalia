@@ -9,6 +9,9 @@ Tool
 - [optional: Save it & rename it]
 - [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
 
+Transcription
+
+From the scan transcribe the sonnet in Spanish into the <body> element (or use the transcription provided) 
 
 Encoding:
 

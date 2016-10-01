@@ -38,8 +38,9 @@
             <normalization>
                <p>Everything has been transcribed as it appears on the page, also the special
                   character, the long S (ſ, HTML Entity &#383;), but the encoding offers as well the
-                  normalized version (also of typos). The following criteria have been set: ſ/s, v/u, z/c, q/c.
-                  Silent h and acute accent (instead of grave accent), have beed added if necessary.</p>
+                  normalized version (also of typos). The following criteria have been set: ſ/s,
+                  v/u, z/c, q/c. Silent h and acute accent (instead of grave accent), have beed
+                  added if necessary.</p>
             </normalization>
          </editorialDecl>
 
@@ -129,8 +130,15 @@
                      <reg>trece versos</reg>
                   </choice> acabando,</l>
                <l n="14">contad <choice>
-                     <orig>ſi ſon cartorze</orig>
-                     <reg>si son catorce</reg>
+                     <orig>ſi ſon</orig>
+                     <reg>si son</reg>
+                  </choice>
+                  <choice>
+                     <sic>cartorze</sic>
+                     <corr><choice>
+                           <orig>catorze</orig>
+                           <reg>catorce</reg>
+                        </choice></corr>
                   </choice>, y <choice>
                      <orig>eſtà</orig>
                      <reg>está</reg>

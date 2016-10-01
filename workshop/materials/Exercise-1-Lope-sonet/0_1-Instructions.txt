@@ -9,6 +9,9 @@ Tool
 - [optional: Save it & rename it]
 - [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
 
+Transcription
+
+From the scan transcribe the sonnet in Polish into the <body> element (or use the transcription provided) 
 
 Encoding
 
@@ -43,23 +46,23 @@ Does not work: pdf polish encoding
 
 Encoding metadata.
 
-You need to add these elements:
+You need to add:
 
 <bibl>
 
 Did you finish already?
 
-Violante or Violente. 'Violente' in the Polish version is a typo, so go for it and normalise it.
+Violante or Violente? 'Violente' in the Polish version is a typo, so go for it and encode the correction.
 
-You need to add these elements:
+You need to add:
 
-Look up for <choice>, <orig> or <reg> in the TEI Guidelines.
+Look up for <choice> in the TEI Guidelines.
 
 
 Did you finish already (again)?
 
 The first letter in the original is highlighted. Do we encode it?
 
-You need to add this element:
+You need to add:
 
 Look up for <hi> in the TEI Guidelines and also the attribute @rend.
