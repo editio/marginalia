@@ -11,7 +11,7 @@ Tool
 
 Transcription
 
-From the scan transcribe the sonnet in Polish into the <body> element (or use the transcription provided) 
+Transcribe from the scan the sonnet in Polish into the <body> element (or use the transcription provided) 
 
 Encoding
 
