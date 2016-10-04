@@ -40,19 +40,15 @@
 <body>
 
 <div class="reveal">
-	
+		
 	<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
-		
-		<!-- 8-11.09.2015
-			sobre la última actualización de reveal
-			1. He copiado sin mas desde la 1 <section> hasta la última de manual/marginalia.html (la versión polaca)
-			2. He añadido mis-cambios.css que tenía antes.
-		-->
-		
+			
 		<section>
+		
+			<!--PORTADA-->
+			
 			<section id="portada">  
-				
 				<h2 class="portada">     
 					Introduction to Digital Scholarly Editions. <h3> Terminology, examples, evaluation, reference model</h3>
 				</h2><h1><span id="filete">☰</span></h1>
@@ -60,18 +56,17 @@
 			
 			<!--INDICE-->
 			
-			<section id="indice">  <!--ID de las secciones realmente solo para hacer enlaces-->
+			<section id="indice">  <!--ID de las secciones para hacer enlaces-->
 				
 				<h3>Content</h3>
 				
 				<div class="izquierda">
 					
 					<ul>
-						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(2)</span></li>
-						<li><a href="#/terminology">Terminology</a><span class="weiter">↡(8)</span></li>
-						<li><a href="#/digital">Digital edition</a><span class="weiter">↡(*)</span></li>
-						<li><a href="#/examples">Examples</a><span class="weiter">↡(*)</span></li>
-						
+						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(1-2)</span></li>
+						<li><a href="#/terminology">Terminology</a><span class="weiter">↡(3-10)</span></li>
+						<li><a href="#/digital">Digital edition</a><span class="weiter">↡(11-14)</span></li>
+						<li><a href="#/examples">Examples</a><span class="weiter">↡(15-25)</span></li>
 					</ul>
 					
 				</div>
@@ -79,10 +74,9 @@
 				<div class="derecha">
 					
 					<ul>
-						<li><a href="#/criteria">Criteria</a><span class="weiter">↡(*)</span></li>        
-						<li><a href="#/model">Reference Model</a><span class="weiter">↡(*)</span></li>
-						<li><a href="#/biblio">Biblio</a><span class="weiter">↡(*)</span></li>
-						<li><a href="#/impressum"><i>Impressum</i></a></li>
+						<li><a href="#/criteria">Criteria</a><span class="weiter">↡(26-28)</span></li>        
+						<li><a href="#/model">Reference Model</a><span class="weiter">↡(29-48)</span></li>
+						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡(49)</span></li>
 					</ul>
 					
 				</div>
@@ -92,7 +86,7 @@
 		
 		<section>
 			
-			<!--Para poner un encabezado a cada grupo de slides, se pone debajo del section que agrupa-->
+			<!--Para poner un encabezado a cada grupo de slides, se pone debajo del elemento <section> que agrupa-->
 			<!--<span style="font-size: 0.3em; color: #0072a7 ;">terminology</span>-->
 			
 			<section id="terminology">
@@ -227,7 +221,7 @@
 			
 			<!-- FIN DE Terminology -->
 			
-		</section>
+		</section>		<!--end terminology-->
 		
 		<section>
 			
@@ -279,14 +273,12 @@
 			</section>          
 			
 			
-		</section>  <!--fin digital-->
-		
+		</section>  <!--end digital-->
 		
 		<section> <!-- examples -->
 			
-			<section>
+			<section id="examples">
 				<h3>Examples of SDE</h3>
-				
 				
 				<div class="imagen-texto"> <img src="imagenes/editio-catalogue-Franzini.png"/>
 					<div class="caption"> <a href="https://github.com/gfranzini/digEds_cat/wiki">Greta Franzini's Catalogue of Digital Editions </a> </div>
@@ -457,7 +449,8 @@
 		</section> <!--end examples-->
 		
 		<section>
-			<section><h3>Guidelines for quality criteria</h3>
+			<section id="criteria">
+				<h3>Guidelines for quality criteria</h3>
 				<h5>conditions to mark a digital edition as a scholarly</h5>
 				
 				<!--	Talk on this slides over the different approaches. -->
@@ -465,13 +458,12 @@
 				<ul>
 					<li><a href="http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/">Criteria</a> for Reviewing Scholarly Digital Editions (Institut für Dokumentologie und Editorik) (<span><a href="http://www.i-d-e.de/publikationen/weitereschriften/kriterien-version-1-1/">de</a></span> | <span><a href="http://www.i-d-e.de/publikationen/weitereschriften/criteri-versione-1-1">it</a></span> </span>) </li>
 					<li><a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/">White Paper</a> of the MLA’s Committee on Scholarly Editions (MLA)</li>
-				</ul></section>
-			
-			
+				</ul>
+				</section>
+				
 			<section>
 				<h3>General criteria</h3>
-				
-				
+						
 				<ul>
 					<li>Ensuring longevity (digital preservation): financial, infrastructure, open standards, obsolete interfaces.</li>
 					<li>It must note its technological choices and be aware of their implications.</li>
@@ -485,7 +477,6 @@
 				
 			</section>
 			
-			
 			<section>
 				
 				<h3>Editorial decisions</h3>
@@ -495,7 +486,7 @@
 					<li>Scholarly, documentary edition; digital archive...?</li>
 					<li>What data model is applied?</li>
 					<li>Does it follow common standards (e.g. TEI guidelines)?</li> 
-					<li>Is the data modeling documented through a schema?</p>
+					<li>Is the data modeling documented through a schema?</li>
 				</ul>
 				
 				<li>more questions: interface, metadata, indices, license...?</li>
@@ -504,13 +495,12 @@
 				</ul>
 				
 			</section>
-			
-			
-		</section>
+
+		</section> <!--end criteria-->
 		
 		<section>
 			
-			<section>
+			<section id="model" >
 				
 				<h3>Reference model for digital editing</h3>	
 				<div class="imagen-sola">
@@ -519,9 +509,8 @@
 					<div class="caption"><a class="fuente" href="http://www.cceh.uni-koeln.de/files/Schmidt%20Slides.pdf">“The Role of Markup in the Digital Humanities”</a>, Desmond Schmidt, Queensland University of Technology, 2012</div>
 				</div>	
 				
-			</section>  <!-- BIG PICTURE Schmidt-->
-			
-			
+			</section>  <!-- Big picture Schmidt-->
+						
 			<section>
 				<h3>document <span style="font-size: 1.5 ; color: red;">⤑</span> digital edition</h3>	
 				<div class="imagen-sola">
@@ -531,9 +520,7 @@
 					</div>
 				</div>	
 				
-			</section>  <!-- Model Schöch -->
-			
-			
+			</section>  <!-- Reference Model Schöch -->
 			
 			<section>
 				
@@ -548,11 +535,12 @@
 					
 					<li>structured (but not standardized)</li>
 					<li>(possibly) digital (but not machine-readable)</li>
-					<li>abstract und simplified</li> </ul>
+					<li>abstract und simplified</li>
+				</ul>
 				
 			</section>
 			
-			<section >
+			<section>
 		
 				<div class="imagen-sola">	<img  src="../manual/imagen/OM-Amberes-1669.png" alt="bloques" />
 					<div class="caption">B. Gracián,<i> Obras Completas</i>, Amberes, 1669. <a class="fuente" href="http://www.bu.uni.wroc.pl/">BUWr</a>
@@ -560,14 +548,14 @@
 				</div>	
 			</section>
 			
-			<section >
+			<section>
 			
-				<div class="imagen-sola">	<img  src="imagenes/editio-OM-structure.png" alt="structure" />
-					<div class="caption">A structured representation of a document (Gracian's <i>Oraculo manual y arte de prudencia)</i></span>
-					</div>
+				<div class="imagen-sola">
+				<img  src="imagenes/editio-OM-structure.png" alt="structure" />
+				<div class="caption">A structured representation of a document (Gracian's <i>Oraculo manual y arte de prudencia)</i></div>
+				</div>
 			</section>
-			
-			
+				
 			<section>
 				<h2>Modelling</h2>
 				<ul>
@@ -587,7 +575,7 @@
 				</ul>
 			</section>
 			
-			<section id="TEI-ODD">
+			<section>
 				
 				<h3>Schema RNG (snippets)</h3>
 				<h5>Paragraph</h5>
@@ -602,7 +590,7 @@
 				<pre><code><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" module="core" ident="quote">
 <desc xml:lang="en">contains a phrase or passage attributed by the narrator or author to some agency external to the text.</desc>
 <!-- --></elementSpec></code></pre>
-			</section>
+			</section>  <!--Schema RNG (snippets)-->
 			
 			<section>
 					<h3>Schema RNG (grid)</h3>
@@ -682,9 +670,7 @@
 				<img src="imagenes/editio-metadata-xml.png" alt="TEI-code-metada" />
 			</section>
 
-
-
-<section>
+			<section>
 				<h2>Visualizing</h2>
 				<ul>
 					<li>to represent for a reader</li>
@@ -700,13 +686,10 @@
 
 				</ul>
 			</section>
-			
-			
-
-
+					
 			<section>
 			
-<h3>CSS stylesheets (text)</h3>
+			<h3>CSS stylesheets (text)</h3>
 			<div class="imagen-texto">
 			
 				<img src="imagenes/editio-xml-css.png"/>
@@ -717,9 +700,9 @@
 			
 			</section>
 
-<section>
+			<section>
 			
-<h3>CSS stylesheets (metadata)</h3>
+			<h3>CSS stylesheets (metadata)</h3>
 			<div class="imagen-texto">
 			
 				<img src="imagenes/editio-metadata.png"/>
@@ -729,8 +712,7 @@
 				<div class="imagen-texto-right"><img src="imagenes/editio-css-header.png"/></div>
 			
 			</section>
-			
-			
+				
 			<section>
 						
 			<h3>XSLT stylesheets</h3>
@@ -749,10 +731,8 @@
 							<h3>Technologies</h3>
 							<li>Databases: eXist (XML), ...</li>
 							<li>CMS: Drupal, Omeka, ...</li>
-							<li>Custom projects</li> </ul>
-							 
-							
-							
+							<li>Tailor-made projects</li> </ul>
+						
 						</section>
 		
 			<section>
@@ -762,36 +742,12 @@
 			
 			<section>
 				<h3> Summary </h3>
-<div class="imagen-sola">				<img src="imagenes/editio-summary.png" alt="Summary" />
-</div>
+				<div class="imagen-sola">				<img src="imagenes/editio-summary.png" alt="Summary" />
+				</div>
 			</section>
-			
-			
-		</section>   <!--FIN MODEL REFERENCE-->
-		
-		
-									<!--
-									*****************
-									**BIBLIOGRAFIA **   
-									*****************
-									-->
-																   									
-		<section>
-		
-		<section id="biblio">
-		
-		<h3>Bibliography & Sources</h3>
-		
-		<ul><li> Christof Schöch: Digitale Textedition mit TEI. <a class="fuente" href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>
-		</ul></li>
-		
-		
-		</section>
-		
-		</section> 
-		
-		
-		
+						
+				</section> <!--FIN MODEL REFERENCE-->
+													
 														<!--
 														*****************
 														*****CREDITOS****   
@@ -804,16 +760,21 @@
 				   </br>
 					 
 			 <p><a href="http://www.ifr.uni.wroc.pl/pl/nasz-instytut/pracownicy/dr-jose-luis-losada-palenzuela">José Luis Losada Palenzuela</a></p> 
-			 <p>Uniwersytet Wrocławski - 2016</p>
-			 <p>jose-luis.losada@uwr.edu.pl</p>
+			 <p>Uniwersytet Wrocławski · 2016</p>
 			 </div>
 			 
 			 <h2 id="filete">✽</h2>
+
+			 
+			 <div id="licencia"><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a></div>
+			</div>	
+			<div>
+				
 				
 		</section>  <!--CRÉDITOS-->
 		
 		
-	</div>
+	</div> <!--End of slides container-->
 
 </div>
 
