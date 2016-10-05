@@ -1,6 +1,6 @@
 /* CSS stylesheet for visualising TEI on the browser */
 
-/* TEI Workshop's materials (Wrocław) · 14/10/2016 */
+/* José Luis Losada: TEI Workshop's materials (Wrocław) · 14/10/2016 */
 
 TEI { width: 75%;
 		margin: 0 auto;}
@@ -94,7 +94,7 @@ sic {
 /*To show different readings */ 
 
 
-rdg[wit="#wit-16	17-O"] {
+rdg[wit="#wit-1617-O"] {
 	
 	display: none;
 }

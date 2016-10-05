@@ -9,7 +9,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Vn ſoneto me manda hazer Violante</title>
+            <title>Un soneto me manda hacer Violante</title>
             <author>Lope de Vega Carpio</author>
          </titleStmt>
          <publicationStmt>
@@ -18,10 +18,10 @@
          </publicationStmt>
          <sourceDesc>
             <bibl>
-               <author>Lope de Vega Carpio</author>
-               <title>+++</title>
-               <pubPlace>+++</pubPlace>
-               <date>+++</date>
+               <title>Sonety hiszpańskie</title>
+               <pubPlace>Londyn</pubPlace>
+               <publisher>Oficyna Poetów i Malarzy</publisher>
+               <date>1965</date>
             </bibl>
             <listWit>
                <witness xml:id="wit-1965-PL">1965-PL</witness>
@@ -29,8 +29,8 @@
             </listWit>
          </sourceDesc>
       </fileDesc>
-
    </teiHeader>
+
    <text>
       <body>
          <lg type="soneto">
@@ -40,10 +40,9 @@
                      <rdg wit="#wit-1617-O">que</rdg>
                      <rdg wit="#wit-1965-PL">y</rdg>
                   </app> en mi vida me he visto en <app>
-                     <rdg wit="#wit-1617-O">tanto aprieto,</rdg>
-                     <rdg wit="#wit-1965-PL">tal aprieto:</rdg>
-                  </app>
-               </l>
+                     <rdg wit="#wit-1617-O">tanto</rdg>
+                     <rdg wit="#wit-1965-PL">tal</rdg>
+                  </app> aprieto: </l>
                <l n="3">catorce versos dicen que es soneto;</l>
                <l n="4">burla burlando van los tres delante.</l>
             </lg>
@@ -58,13 +57,16 @@
             <lg type="terceto">
                <l n="9">Por el primer terceto voy entrando</l>
                <l n="10">y <app>
+                     <rdg wit="#wit-1617-O"/>
                      <rdg wit="#wit-1965-PL"><choice>
                            <orig>aùn</orig>
                            <reg>aún</reg>
                         </choice></rdg>
-                     <rdg wit="#wit-1617-O"> </rdg>
                   </app> parece que entré con pie derecho,</l>
-               <l n="11">pues fin con este verso la voy dando.</l>
+               <l n="11">pues fin con este verso <app>
+                     <rdg wit="#wit-1617-O">le</rdg>
+                     <rdg wit="#wit-1965-PL">la</rdg>
+                  </app> voy dando.</l>
             </lg>
 
             <lg type="terceto">
@@ -72,7 +74,10 @@
                      <corr>segundo</corr>
                      <sic>sugundo</sic>
                   </choice>, y aun sospecho</l>
-               <l n="13">que estoy los trece versos acabando:</l>
+               <l n="13">que <app>
+                     <rdg wit="#wit-1617-O">voy</rdg>
+                     <rdg wit="#wit-1965-PL">estoy</rdg>
+                  </app> los trece versos acabando:</l>
                <l n="14">contad si son catorce y está hecho.</l>
             </lg>
          </lg>

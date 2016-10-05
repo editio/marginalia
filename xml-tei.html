@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>Workshop · Digital Editions with TEI</title>
+<title>Markup, XML, TEI</title>
 <meta name="description" content="Workshop · Digital Editions with TEI">
 <meta name="author" content="José Luis Losada">
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -50,8 +50,8 @@
 			
 			<section id="portada">  
 				<h2 class="portada">     
-					Introduction to Digital Scholarly Editions. <h3> Terminology, examples, evaluation, reference model</h3>
-				</h2><h1><span id="filete">☰</span></h1>
+					Markup, XML, TEI <h3> Character, structure, guidelines</h3>
+				</h2><h1><span id="filete">☵</span></h1>
 			</section>  <!--FIN PORTADA-->
 			
 			<!--INDICE-->
@@ -64,9 +64,9 @@
 					
 					<ul>
 						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(1-2)</span></li>
-						<li><a href="#/terminology">Terminology</a><span class="weiter">↡(3-10)</span></li>
-						<li><a href="#/digital">Digital edition</a><span class="weiter">↡(11-14)</span></li>
-						<li><a href="#/examples">Examples</a><span class="weiter">↡(15-25)</span></li>
+						<li><a href="#/terminology">*</a><span class="weiter">↡(3-)</span></li>
+						<li><a href="#/digital">*</a><span class="weiter">↡()</span></li>
+						<li><a href="#/examples">*</a><span class="weiter">↡()</span></li>
 					</ul>
 					
 				</div>
@@ -74,10 +74,10 @@
 				<div class="derecha">
 					
 					<ul>
-						<li><a href="#/criteria">Criteria</a><span class="weiter">↡(26-28)</span></li>        
-						<li><a href="#/model">Reference Model</a><span class="weiter">↡(29-48)</span></li>
-						<li><a href="#/biblio">Resources</a><span class="weiter">↡(49)</span></li>
-						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡(50)</span></li>
+						<li><a href="#/criteria">*</a><span class="weiter">↡()</span></li>        
+						<li><a href="#/model">*</a><span class="weiter">↡()</span></li>
+						<li><a href="#/biblio">Resources</a><span class="weiter">↡()</span></li>
+						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡()</span></li>
 					</ul>
 					
 				</div>
@@ -89,23 +89,62 @@
 			
 			<!--Para poner un encabezado a cada grupo de slides, se pone debajo del elemento <section> que agrupa-->
 			<!--<span style="font-size: 0.3em; color: #0072a7 ;">terminology</span>-->
+
+<section>
+
+<div class="imagen-sola">
+
+<img src="../manual/imagen/marginalia-xml-tei.png"/>
+
+	<div class="caption">C. Schöch <a class="fuente" href="https://de.dariah.eu/tei-tutorial">Digitale Textedition mit TEI (Tutorial)</a>
+		</div>
+	
+	
+</div>	
+
+</section>  <!-- TEI BUBBLE-->
+
+<section>
+
+<div class="imagen-texto">
+
+<img src="../manual/imagen/marginalia-tei-logo.jpg"/>
+
+	<div class="caption"><a class="fuente" href="http://www.tei-c.org">TEI: Text Encoding Initiative</a></div>
+	
+	</div>
+
+<ul style="width: 60%; float: right;" >
+<li>XML: Język znaczników do opisu struktury danych</li>
+<li>TEI: Język znaczników do opisu struktury tekstów </li>
+<li>Międzynarodowy standard</li>
+<li>Wyłuskiwanie</li>  
+<li>Przekształcanie </li>
+<li>Sformatowania </li>
+<li>Sortowania</li>
+<li>...</li>
+</ul>
+
+</section>  <!--TEI definition-->
+			
+			
+					
+			
+			
+			
 			
 			<section id="terminology">
 				
-				<h3>Our subject: edition</h3>
+				<h3>What is markup?</h3>
 				</br>
 				<ul>
-					<li> Different terminology, </li>
-					<li> different traditions, </li>
-					<li> different languages, </li>     
-					<li> different periods. </li>                   
+					<li> ~ To encode ~ to tag </li>
+					<li> To make explicit (to a machine) what is implicit (to a person) </li>
+					<li> To add value by supplying multiple annotations </li>     
+					<li> To facilitate re-use of the same material </li>                   
 					
 				</ul>
-				
-				</br>
-				</br>
-				
-				<span style="font-size: 1.5 ; color: red;">~</span> Edición crítica, naukowa edycja krytyczna, Scholarly Edition, Historisch-kritische Ausgabe  <span style="font-size: 1.5 ; color: red;">~</span> 
+			
 			</section>
 			
 			
@@ -748,38 +787,31 @@
 			</section>
 						
 				</section> <!--FIN MODEL REFERENCE-->
-													
-													
-																						<!--	*****************
-																									*****Resources****   
-																									*****************
-																									-->
-													
-													
-							<section id="biblio">
-											<h3> Resources </h3>
-											<h5> The content has been partly adapted from:</h5>
-											<ul style="font-size: 0.7em;">
-											
-											<li> Lou Burnard et alii (2007),<a href="http://www.tei-c.org/About/Archive_new/ETE/Preview/"><i>Electronic Textual Editing</i></a>, MLA & TEI Consortium</li>
-											<li> C. Macé & P. Roelli (2015), <a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum"><i>Parvum lexicon stemmatologicum</i></a>.</li>
-											<li> Elena Pierazzo (2015), <i>Digital Scholarly Editing: Theories, Models and Methods</i>, Ashgate Publishing</li>
-											<li> Patrick Sahle (2013), <a href="http://www.i-d-e.de/publikationen/schriften/s7-9-digitale-editionsformen/"><i>Digitale Editionsformen, Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels</i></a>, 3 Bände, Norderstedt: Books on Demand. </li>
-											<li> Christof Schöch (2014), <i>Digitale Textedition mit TEI</i>, <a href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>.</li>
-											
-											
-
-											
-											
-											
-							
-							
-							
-											</ul>
-											
-										</section>						
-													
-													
+				
+				
+				<!--
+				*****************
+				*****Resources****   
+				*****************
+				-->
+				
+				
+				
+				<section id="biblio">
+					
+					<h3> Resources </h3>
+					<h5> The content has been partly adapted from:</h5>
+					<ul style="font-size: 0.7em;">
+					<li><i>A Gentle Introduction to XML, </i><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">Guidelines for Electronic Text Encoding and Interchange</a>, TEI P5: Version 3.0.0. </li>
+					<li><i>digital.humanities @ Oxford, </i><a href="http://tei.it.ox.ac.uk/Talks/">TEI @ Oxford Teaching Pages</a>.</li>
+					<li>Lou Burnard (2014), </i><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"><i>What is the Text Encoding Initiative? How to add intelligent markup to digital resources </i></a>, Marseille: OpenEdition Press.</li>
+					<li>Christof Schöch (2014), <i>Digitale Textedition mit TEI</i>. <a href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>.</li>
+		
+	
+					</ul>
+					
+				</section>
+				
 													
 														<!--
 														*****************
