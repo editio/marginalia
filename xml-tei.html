@@ -87,52 +87,7 @@
 		
 		<section>
 			
-			<!--Para poner un encabezado a cada grupo de slides, se pone debajo del elemento <section> que agrupa-->
-			<!--<span style="font-size: 0.3em; color: #0072a7 ;">terminology</span>-->
-
-<section>
-
-<div class="imagen-sola">
-
-<img src="../manual/imagen/marginalia-xml-tei.png"/>
-
-	<div class="caption">C. Schöch <a class="fuente" href="https://de.dariah.eu/tei-tutorial">Digitale Textedition mit TEI (Tutorial)</a>
-		</div>
-	
-	
-</div>	
-
-</section>  <!-- TEI BUBBLE-->
-
-<section>
-
-<div class="imagen-texto">
-
-<img src="../manual/imagen/marginalia-tei-logo.jpg"/>
-
-	<div class="caption"><a class="fuente" href="http://www.tei-c.org">TEI: Text Encoding Initiative</a></div>
-	
-	</div>
-
-<ul style="width: 60%; float: right;" >
-<li>XML: Język znaczników do opisu struktury danych</li>
-<li>TEI: Język znaczników do opisu struktury tekstów </li>
-<li>Międzynarodowy standard</li>
-<li>Wyłuskiwanie</li>  
-<li>Przekształcanie </li>
-<li>Sformatowania </li>
-<li>Sortowania</li>
-<li>...</li>
-</ul>
-
-</section>  <!--TEI definition-->
-			
-			
 					
-			
-			
-			
-			
 			<section id="terminology">
 				
 				<h3>What is markup?</h3>
@@ -140,7 +95,8 @@
 				<ul>
 					<li> To encode, to tag. </li>
 					<li> To make explicit (to a machine) what is implicit (to a person). </li>
-					<li> To add value by supplying multiple annotations. </li>                
+					<li> To add value by supplying multiple annotations. </li>     
+					<li> To facilitate re-use of the same material. </li>                   
 				</ul>
 			
 			</section>
@@ -164,630 +120,56 @@
 												
 			</section>
 			
-			<section>
-				<h3>How is a Scholarly Edition done?</h3>
-				
-				<p class="cita"> "a scholarly edition is one that follows scholarly <span class="resaltado">method and purpose</span>, that is undertaken with professional <span class="resaltado">critical judgment</span> and the fullest possible understanding of the relevant primary materials, and that provides clear documentary evidence of the relations and contexts of those primary materials" </p> 
-				<div class="fuente"> <a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/">Committee on Scholarly Editions - MLA</a> & <a href="https://www.mla.org/Resources/Research/Surveys-Reports-and-Other-Documents/Publishing-and-Scholarship/Reports-from-the-MLA-Committee-on-Scholarly-Editions/Guidelines-for-Editors-of-Scholarly-Editions">Guidelines for Editors of Scholarly Editions </a>
+						
+			
+		<section>
+		
+		<div class="imagen-sola">
+		
+		<img src="../manual/imagen/marginalia-xml-tei.png"/>
+		
+			<div class="caption">C. Schöch <a class="fuente" href="https://de.dariah.eu/tei-tutorial">Digitale Textedition mit TEI (Tutorial)</a>
 				</div>
-				
-			</section>
-			
-			<section>
-				
-				<h3>Textual Criticism</h3>
-				
-				<span style="font-size: 1.5 ; color: red;">~</span> Editionswissenschaft,   Scholarly Editing, Critique génétique, Filologia d’autore, Ecdótica     <span style="font-size: 1.5 ; color: red;">~</span> 
-			</section>
-			
-			<section>
-				
-				<h3>Lachmann’s method</h3>
-				<h5>(German tradition)</h5>
-				
-				<div class="imagen-texto">
-					
-					<img src="imagenes/editio-Priego-1997-65.png"/>
-					
-					<div class="caption">example of <i>stemma</i> (Pérez 1997: 97)</div>
-					
-				</div>  
-				
-				<ul style="width: 60%; float: right;" >
-					<li>reconstructing the (original) text based on different <a href="https://wiki.hiit.fi/display/stemmatology/Witness">witnesses</a></li>   <!--(surviving sources)-->
-					<li>witnesses are grouped hierarchically in order to compile a genealogical tree (<a href="https://wiki.hiit.fi/display/stemmatology/Stemma">stemma</a>)</li>
-					<li>genealogical tree is based on <a href="https://wiki.hiit.fi/display/stemmatology/Error">typology of errors</a></li>
-					<li>Dogmatism</li>
-					</br>
-					
-					<div class="fuente">
-						<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
-					</div>
-				</ul>
-				
-			</section>      
-			
-			<section>
-				
-				<h3><i>Bon manuscrit</i></h3>
-				<h5>(French tradition)</h5>
-				</br>
-				<ul>
-					<li> Joseph Bédier's scepticism on stemmatics</li>
-					<li> Edition based on the earliest or best preserved manuscript (<a href="https://wiki.hiit.fi/display/stemmatology/Codex+optimus">codex optimus</a>)</li>
-					<li> Historical & cultural analysis of the text tradition</li>
-					
-				</ul>
-				
-				<div class="fuente">
-					<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
-				</div>
-				
-			</section>
-			
-			<section>
-				
-				<h3>Copy-text theory</h3>
-				<h5>(Anglo-American tradition)</h5>
-				</br>
-				<ul>
-					<li> printed edition closest to the author’s intention</li>
-					<li> autograph manuscript & printed edition (combined) </li>
-				</ul>
-				
-				<div class="fuente">
-					<a href="https://wiki.hiit.fi/display/stemmatology/Parvum+lexicon+stemmatologicum">Parvum lexicon stemmatologicum</a>
-				</div>
-			</section>
-			
-			<section>
-				
-				<h3>Methods related to type of documents</h3>
-				</br>
-				<ul>
-					<li> stemmatics: medieval and classical texts preserved in manuscripts.</li>
-					<li> copy-text: modern print materials </li>
-					<li> genetics: authorial drafts and contemporary authors (edition ≃ <a href="http://uahost.uantwerpen.be/lse/index.php/lexicon/genetic-dossier/">genetic dossier</a>)</li>          
-				</ul>
-				
-				
-				<div class="fuente">  Pierazzo 2015: 17  & <a href="http://uahost.uantwerpen.be/lse/">Lexicon of Scholarly Editing</a>
-				</div>
-			</section>
-			
-			<!--<li >substantive & accidentals <a href="http://uahost.uantwerpen.be/lse/index.php/lexicon/variant/">variants (readings)</a> </li>-->  
 			
 			
-			<!-- FIN DE Terminology -->
+		</div>	
+		
+		</section>  <!-- TEI BUBBLE-->
 			
+						
 		</section>		<!--end terminology-->
 		
 		<section>
-			
-			<section id="digital">
-				
-				<h3>Digital editions</h3>
-				
-				<div class="imagen-3"> <img src="imagenes/editio-Sahle-Bd_7.png"/>
-				</div>  
-				
-				<div class="imagen-3"> <img src="imagenes/editio-Sahle-Bd_8.png"/>
-				</div>  
-				
-				<div class="imagen-3"> <img src="imagenes/editio-Sahle-Bd_9.png"/>
-				</div>  
-				
-				<div class="caption"> Patrick Sahle, <a href="http://www.i-d-e.de/publikationen/schriften/s7-9-digitale-editionsformen/"><i>Digitale Editionsformen, Zum Umgang mit der Überlieferung unter den Bedingungen des Medienwandels</i></a>, 3 Bände, Norderstedt: Books on Demand 2013 </div>
-				
-			</section> 
-			
-			
-			<section >
-				
-				
-				<h3>A digital edition follows the requirements of a scholarly edition in consideration of the digital paradigm</h3>
-				
-				<p class="cita" style="font-size: 60% ;line-height: 1em;"> "Eine digitale Edition ist dadurch bestimmt, dass sie die allgemeinen
-					Anforderungen an eine wissenschaftliche Edition durch die Berücksichtigung
-					der gegenwärtigen technischen Möglichkeiten und ihrer methodischen
-					Implikationen erfüllt. Sie folgt einem «digitalen Paradigma»"</p>
-				<div class="fuente"> (Sahle 2016/2: 148)</div>
-			</section>          
-			
-			
-			<section >
-				<h3>Digital scholarly editions are not just scholarly editions in digital media: <span class="resaltado">digital <span style="font-size: 1.5 ; color: red;">≠</span> digitized</span></h3>
-				
-				<p class="cita" style="font-size: 60% ;line-height: 1em;">"Wiedergabe ohne Erschließung ist keine Edition. Eine bloße Reproduktion, ein  einfaches Faksimile, eine digitale Bibliothek ist keine Edition"</p>
-				
-				<p class="cita" style="font-size: 60%; line-height: 1em;">"Deshalb kann eine digitale Edition nicht einfach die digitale Fassung einer auch im Druck realisierbaren Edition sein – zu ihrem Wesen gehört, dass sie über die Beschränkungen der typografischen Edition hinweggeht"</p>
-				<div class="fuente"> (Sahle 2016/2: 141-142; 149)</div>                                                                                 
-			</section>      
-			
-			<section >
-				<h3>A digital edition can not be printed without a loss of information and/or functionality</h3>
-				
-				<p class="cita" style="font-size: 60% ;line-height: 1em;">"Eine digitale Edition ist dadurch bestimmt, dass sie nicht ohne wesentliche Informations- und Funktionsverluste in eine typografi sche Form gebracht werden kann – und in diesem Sinne über die druckbare Edition hinausgeht."</p>
-				<div class="fuente"> (Sahle 2016/2: 149)</div>                                                                                  
-			</section>          
-			
-			
-		</section>  <!--end digital-->
 		
-		<section> <!-- examples -->
-			
-			<section id="examples">
-				<h3>Examples of SDE</h3>
-				
-				<div class="imagen-texto"> <img src="imagenes/editio-catalogue-Franzini.png"/>
-					<div class="caption"> <a href="https://github.com/gfranzini/digEds_cat/wiki">Greta Franzini's Catalogue of Digital Editions </a> </div>
-				</div>  
-				
-				<div class="imagen-texto-right"> <img src="imagenes/editio-catalogue-Sahle.png"/>
-					<div class="caption"> <a href="http://www.digitale-edition.de">Patrick Sahle's Catalog of Digital Scholarly Editions</a>
-					</div>
-				</div>  
-				
-				
-			</section>
-			
-			
-			<section> <!--projects-->
-				
-				<h3>Drama editions</h3>
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Faust.png"/>
-					
-					<div class="caption">Johann Wolfgang Goethe: <i>Faust</i> Historisch-kritische Edition <a class="fuente" href="http://beta.faustedition.net">http://beta.faustedition.net</a>
-					</div>
-					
-					
-				</div>
-				
-			</section>  
-			<section> <!--projects-->
-				
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Lope.png"/>
-					
-					<div class="caption">Félix Lope de Vega y Carpio: <i>El animal de Hungría</i> <a class="fuente" href="http://artelope.uv.es/biblioteca">http://artelope.uv.es/biblioteca</a>
-					</div>
-					
-					
-				</div>
-				
-			</section>  
-			
-			
-			<section>
-				
-				<h3>Correspondence editions</h3>
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Gogh.png"/>
-					
-					<div class="caption">Vincent van Gogh The Letters </i><a class="fuente" href="http://vangoghletters.org">http://vangoghletters.org</a>
-					</div>
-					
-				</div>
-				
-				
-			</section>                                      
-			
-			
-			<section><div class="imagen-sola">
-				
-				<img src="imagenes/editio-Dantyszek.png"/>
-				
-				<div class="caption">Korpus Tekstów i Korespondencji Jana Dantyszka </i><a class="fuente" href="http://dantiscus.ibi.uw.edu.pl">http://dantiscus.ibi.uw.edu.pl</a>
-				</div>
-				
-			</div></section>
-			
-			
-			
-			<section >
-				
-				<h3>Genetic editions</h3>
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Goytisolo.png"/>
-					
-					<div class="caption"><i>Manuscrito digital de Juan Goytisolo</i> <a class="fuente" href="http://www.goytisolo.unibe.ch"> http://www.goytisolo.unibe.ch</a>
-					</div>
-					
-					
-				</div>
-				
-				
-			</section>  
-			
-			
-			<section id="whitmann">
-				
-				<h3>Collected works</h3>
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Whitman.png"/>
-					
-					<div class="caption"><i>The Walt Whitman Archive</i> <a class="fuente" href="http://www.whitmanarchive.org"> http://www.whitmanarchive.org</a>
-					</div>
-					
-				</div>
-				
-			</section>  
-			
-			<section >
-				
-				<h3>Collaborative editions</h3>
-				
-				<!--<p> "a team of selected scholars, experts in the field, lead by one or more chief editors, share principles, tools and resources in the preparation of a (usually) multi-volume edition" (Pierazzo, 2015: 24-25)  </p>-->
-				
-				
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-Schnitzler.png"/>
-					
-					<div class="caption"><i>Arthur Schnitzler digital.</i> Digitale historisch-kritische Edition (Werke 1905 bis 1931)   <a class="fuente" href="http://www.arthur-schnitzler.de">http://www.arthur-schnitzler.de</a>
-					</div>
-					
-					
-				</div>
-				
-				
-			</section>  
-			
-			
-			<section >
-				
-				<h3>Social Editions</h3>
-				
-				<p class="cita">    "is to offer the text to the community not only for contributions such as annotation, comments, and translations but also for the editing of existing texts or the addition of new texts [...] The community that produces the text or enriches it can be controlled or uncontrolled"</p>
-				<div class="fuente">(Pierazzo, 2015: 24-25)</div>                                                                                                 
-				
-				
-				
-			</section>  
-			
-			<section >
-				
-				<div class="imagen-sola">
-					
-					<img src="../manual/imagen/marginalia-abo.jpg"/>
-					
-					<div class="caption">Harvey’s copy of Livy’s <i>Histories</i> <a class="fuente" href="http://www.annotatedbooksonline.com">http://www.annotatedbooksonline.com</a>
-					</div>
-					
-				</div>
-				
-			</section>  
-			
-			<section >
-				
-				<h3>Documentary editions</h3>
-				
-				<ul>
-					<li>An edition of a text based on a single document (one source vs. readings/witnesses from multiple sources).</li>
-					<li>Recording (as many possible) features of the document.</li>
-					<li>Displaying them with the necessary tools.</li>
-					<li>Documentation vs. interpretation.</li>
-					<li>Non-critical vs. critical (documents seen as misleading guides to the past).</li>
-				</ul>
-				
-				<div class="fuente">(Pierazzo 2015: 19-21; Sahle 2013/1: 214)</div>
-				<div class="fuente"><i>Vide</i> <a href="http://www.documentaryediting.org/wordpress/?page_id=363">Projects and Editions of the Association for Documentary Editing</a></div>
-			</section>  
-			
-		</section> <!--end examples-->
+		
+		
+		
 		
 		<section>
-			<section id="criteria">
-				<h3>Guidelines for quality criteria</h3>
-				<h5>conditions to mark a digital edition as a scholarly</h5>
-				
-				<!--	Talk on this slides over the different approaches. -->
-				
-				<ul>
-					<li><a href="http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/">Criteria</a> for Reviewing Scholarly Digital Editions (Institut für Dokumentologie und Editorik) (<span><a href="http://www.i-d-e.de/publikationen/weitereschriften/kriterien-version-1-1/">de</a></span> | <span><a href="http://www.i-d-e.de/publikationen/weitereschriften/criteri-versione-1-1">it</a></span> </span>) </li>
-					<li><a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/">White Paper</a> of the MLA’s Committee on Scholarly Editions (MLA)</li>
-				</ul>
-				</section>
-				
-			<section>
-				<h3>General criteria</h3>
-						
-				<ul>
-					<li>Ensuring longevity (digital preservation): financial, infrastructure, open standards, obsolete interfaces.</li>
-					<li>It must note its technological choices and be aware of their implications.</li>
-					<li>Facilitating data sampling, reuse, and remix.</li>
-					<li>Transparency with respect to data, methods.</li>
-					<li>Usability of the edition.</li>
-					<div class="fuente"><a href="https://scholarlyeditions.commons.mla.org/2015/09/02/cse-white-paper/">MLA's White Paper</a></div>
-					
-					
-				</ul>
-				
-			</section>
-			
-			<section>
-				
-				<h3>Editorial decisions</h3>
-				
-				<ul>
-					
-					<li>Scholarly, documentary edition; digital archive...?</li>
-					<li>What data model is applied?</li>
-					<li>Does it follow common standards (e.g. TEI guidelines)?</li> 
-					<li>Is the data modeling documented through a schema?</li>
-				</ul>
-				
-				<li>more questions: interface, metadata, indices, license...?</li>
-				
-				<div class="fuente"><a href="http://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1/">Criteria IDE</a></div>						
-				</ul>
-				
-			</section>
-
-		</section> <!--end criteria-->
 		
-		<section>
-			
-			<section id="model" >
-				
-				<h3>Reference model for digital editing</h3>	
-				<div class="imagen-sola">
-					
-					<img src="../manual/imagen/marginalia-bigpicture_0.png"/>
-					<div class="caption"><a class="fuente" href="http://www.cceh.uni-koeln.de/files/Schmidt%20Slides.pdf">“The Role of Markup in the Digital Humanities”</a>, Desmond Schmidt, Queensland University of Technology, 2012</div>
-				</div>	
-				
-			</section>  <!-- Big picture Schmidt-->
-						
-			<section>
-				<h3>document <span style="font-size: 1.5 ; color: red;">⤑</span> digital edition</h3>	
-				<div class="imagen-sola">
-					
-					<img src="imagenes/editio-reference-model-DSH.png"/>
-					<div class="caption"> Christof Schöch: Digitale Textedition mit TEI. <a class="fuente" href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>
-					</div>
-				</div>	
-				
-			</section>  <!-- Reference Model Schöch -->
-			
-			<section>
-				
-				<h2>Analyzing</h2>
-				<ul>
-					<li> to set document properties 
-					</li>
-					<li> implicit → explicit</li>
-					
-					</br>		
-					<h3>Outcome: a representation...</h3>
-					
-					<li>structured (but not standardized)</li>
-					<li>(possibly) digital (but not machine-readable)</li>
-					<li>abstract und simplified</li>
-				</ul>
-				
-			</section>
-			
-			<section>
+		<div class="imagen-texto">
 		
-				<div class="imagen-sola">	<img  src="../manual/imagen/OM-Amberes-1669.png" alt="bloques" />
-					<div class="caption">B. Gracián,<i> Obras Completas</i>, Amberes, 1669. <a class="fuente" href="http://www.bu.uni.wroc.pl/">BUWr</a>
-					</div>
-				</div>	
-			</section>
-			
-			<section>
-			
-				<div class="imagen-sola">
-				<img  src="imagenes/editio-OM-structure.png" alt="structure" />
-				<div class="caption">A structured representation of a document (Gracian's <i>Oraculo manual y arte de prudencia)</i></div>
-				</div>
-			</section>
-				
-			<section>
-				<h2>Modelling</h2>
-				<ul>
-					<li> to set a formal model of the document.</li>
+		<img src="../manual/imagen/marginalia-tei-logo.jpg"/>
 		
-					<h3>Technologies:</h3>
-					
-					<li>Standard: XML-Schema.</li>
-					<li>Tool: Roma (webservice).</li>
-					
-					<h3>Outcome: a representation...</h3>
-					
-					<li>structured and standardized.</li>
-					<li>digital and machine-readable.</li>
-					<li>without content (yet).</li>
-					<li>useful for guiding encoding and visualization.</li>
-				</ul>
-			</section>
+			<div class="caption"><a class="fuente" href="http://www.tei-c.org">TEI: Text Encoding Initiative</a></div>
 			
-			<section>
-				
-				<h3>Schema RNG (snippets)</h3>
-				<h5>Paragraph</h5>
-				<pre><code><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" module="core" ident="p">
-<desc xml:lang="en">marks paragraphs in prose.</desc>
-<!-- --></elementSpec></code></pre>
-				<h5>Page break</h5>
-				<pre><code><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" module="core" ident="pb">
-<desc xml:lang="en">marks the start of a new page in a paginated document.</desc>
-<!-- --></elementSpec></code></pre>
-				<h5>Quotation</h5>
-				<pre><code><elementSpec xmlns:rng="http://relaxng.org/ns/structure/1.0" module="core" ident="quote">
-<desc xml:lang="en">contains a phrase or passage attributed by the narrator or author to some agency external to the text.</desc>
-<!-- --></elementSpec></code></pre>
-			</section>  <!--Schema RNG (snippets)-->
-			
-			<section>
-					<h3>Schema RNG (grid)</h3>
-					<img src="imagenes/editio-schema-rng.png" alt="schema RNG" />
-				</section>
-						
-			<section>
-				<h2>Transcribing</h2>
-				<ul>
-					<li>to set the text in a linear form.</li>
-					
-					<h3>Technologies:</h3>
-					
-					<li>Format: .txt, .doc, .odt</li>
-					<li>Tool: text editor...</li>
-					
-					<h3>Outcome: a text representation...</h3>
-					
-					<li>digital and machine-readable.</li>
-					<li>limited complexity and precision.</li>
-					<li>less structured.</li>
-					<li>not standardized.</li>
-				</ul>
-			</section>
-			
-			<section>
-				
-				<h3>Transcribing</h3>
-			
-				<div class="imagen-texto">
-					
-					<img src="imagenes/editio-transcript.png"/>
-									
-				</div>  
-				
-				<ul style="width: 60%; float: right;" >
-				
-				<h5>represented</h5>
-				<li>all characters</li>
-				<li>implicit: line breaks, paragraphs</li>
-				<li>(not much more)</li>
-				</br>
-				<h5>not represented</h5>
-				<li>special characters</li> 
-				<li>layout</li>
-				<li>(and much more)</li>
-				
-									</ul>
-				
-			</section>      
-			
-			<section>
-				<h2>Encoding</h2>
-				<ul>
-					<li>to improve the transcript</li>
-
-					<h3>Technologies:</h3>
-					
-					<li>Standards: XML-TEI </li>
-					<li>Tool: XML-Editor (oXygen, ...)</li>
-					
-					<h3>Outcome: a text representation...</h3>
-					
-					<li>digital and machine-readable (not so men-readable).</li>
-					<li>structured & standardized</li>
-					<li><span class="resaltado">the core of a digital edition</span></li>
-				</ul>
-			</section>
-			
-			<section>
-				<h3>XML-TEI (text)</h3>
-				<img src="imagenes/editio-tei-code.png" alt="TEI-code" />
-			</section>
-			
-			<section>
-				<h3>XML-TEI (metadata)</h3>
-				<img src="imagenes/editio-metadata-xml.png" alt="TEI-code-metada" />
-			</section>
-
-			<section>
-				<h2>Visualizing</h2>
-				<ul>
-					<li>to represent for a reader</li>
-
-					<h3>Technologies:</h3>
-					
-					<li>Standards: CSS, XSLT, X-Path, XML-FO</li>
-					<li>Formats: HTML, PDF, ePub</li>
-					
-					<h3>Outcome: different visualizations...</h3>
-					
-					<li>out of a TEI source file</li>
-
-				</ul>
-			</section>
-					
-			<section>
-			
-			<h3>CSS stylesheets (text)</h3>
-			<div class="imagen-texto">
-			
-				<img src="imagenes/editio-xml-css.png"/>
-			
-			</div>	
-				
-				<div class="imagen-texto-right"><img src="imagenes/editio-css.png"/></div>
-			
-			</section>
-
-			<section>
-			
-			<h3>CSS stylesheets (metadata)</h3>
-			<div class="imagen-texto">
-			
-				<img src="imagenes/editio-metadata.png"/>
-			
-			</div>	
-				
-				<div class="imagen-texto-right"><img src="imagenes/editio-css-header.png"/></div>
-			
-			</section>
-				
-			<section>
-						
-			<h3>XSLT stylesheets</h3>
-												
-							<img src="imagenes/editio-xslt-code.png"/>
-						
-						</section>
-			
-			<section>
-							<h2>Publishing</h2>
-							<ul>
-								<li>to be available for the public</li>
-								<li>to set the text in the editorial context</li>
-								<li>to interact with the edition</li>
-</br>
-							<h3>Technologies</h3>
-							<li>Databases: eXist (XML), ...</li>
-							<li>CMS: Drupal, Omeka, ...</li>
-							<li>Tailor-made projects</li> </ul>
-						
-						</section>
+			</div>
 		
-			<section>
-				<h5>Publishing</h5>
-				<img src="imagenes/editio-webpublication.png" alt="TEI-code" />
-			</section>
-			
-			<section>
-				<h3> Summary </h3>
-				<div class="imagen-sola">				<img src="imagenes/editio-summary.png" alt="Summary" />
-				</div>
-			</section>
+		<ul style="width: 60%; float: right;" >
+		<li>XML: Język znaczników do opisu struktury danych</li>
+		<li>TEI: Język znaczników do opisu struktury tekstów </li>
+		<li>Międzynarodowy standard</li>
+		<li>Wyłuskiwanie</li>  
+		<li>Przekształcanie </li>
+		<li>Sformatowania </li>
+		<li>Sortowania</li>
+		<li>...</li>
+		</ul>
+		
+		</section>  <!--TEI definition-->
+		
+		</section>
 						
-				</section> <!--FIN MODEL REFERENCE-->
-				
-				
 				<!--
 				*****************
 				*****Resources****   
@@ -832,7 +214,6 @@
 			 
 			 <div id="licencia"><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a></div>
 			</div>	
-			<div>
 				
 				
 		</section>  <!--CRÉDITOS-->
