@@ -3,19 +3,17 @@
 
 <head>
 <meta charset="utf-8">
-<title>Markup, XML, TEI</title>
-<meta name="description" content="Workshop · Digital Editions with TEI">
+<title>Workshop · Markup, XML, TEI</title>
+<meta name="description" content="Workshop · Markup, XML, TEI">
 <meta name="author" content="José Luis Losada">
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 <link rel="apple-touch-icon" type="image/png" href="../manual/imagen/edigital.png"> 
-
 <link rel="shortcut icon" type="image/x-icon" href="../manual/imagen/favicon.ico">
 
 <!-- Hojas de estilo-->
-
 <link rel="stylesheet" href="css/reveal.css">
 <link rel="stylesheet" href="css/theme/serif.css" id="theme">
 <link rel="stylesheet" href="css/mis-cambios.css">
@@ -64,9 +62,8 @@
 					
 					<ul>
 						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(1-2)</span></li>
-						<li><a href="#/terminology">*</a><span class="weiter">↡(3-)</span></li>
-						<li><a href="#/digital">*</a><span class="weiter">↡()</span></li>
-						<li><a href="#/examples">*</a><span class="weiter">↡()</span></li>
+						<li><a href="#/markup">Markup language</a><span class="weiter">↡(3-8)</span></li>
+						<li><a href="#/tei">TEI</a><span class="weiter">↡(9-)</span></li>
 					</ul>
 					
 				</div>
@@ -74,8 +71,7 @@
 				<div class="derecha">
 					
 					<ul>
-						<li><a href="#/criteria">*</a><span class="weiter">↡()</span></li>        
-						<li><a href="#/model">*</a><span class="weiter">↡()</span></li>
+						<li><a href="#/guidelines">Guidelines</a><span class="weiter">↡()</span></li>        
 						<li><a href="#/biblio">Resources</a><span class="weiter">↡()</span></li>
 						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡()</span></li>
 					</ul>
@@ -86,41 +82,122 @@
 		</section> <!--FIN PORTADA E INDICE-->
 		
 		<section>
+		<section id="markup">
+			
+			<h3>What is markup language?</h3>
+			</br>
+			<ul>
+				<li> To encode, to tag texts;</li>
+				<li> To make explicit (to a machine) what is implicit (to a person); </li>
+				<li> To add value by supplying multiple annotations. </li>     
+			</ul>
+		</section>
+		
+		
+		<section>
+		
+		<h3>XML vs. HTML</h3>
+		<ul>
+			
+		<li>XML is extensible: it does not consist of a fixed set of tags;</li>
+		<li>XML documents must be well-formed according to a defined syntax;</li>
+		<li>XML documents can be formally validated against a schema;</li>
+		<li>XML is more interested in the meaning of data than in its presentation.</li>
+		
+		</ul>
+		</section>
+		
+		<section>
+
+	
+					<h3>Procedural Markup</h3>
+											
+					<li>Visual, typographic, representation;</li>
+					<li>WYSWYG:  What You See is <i>ALL</i> you Get.</li>
+					</br>
+					<h3>Descriptive Markup</h3>					
+					<li>Semantic, funcional, structured;</li>
+					<li>Meaning before format.</li>
+					
+				</ul>	
+			
+		</section>
+		
+		<section>
+		<h5>"<b>Miguel de Cervantes</b> escribió el <i>Quijote</i>"</h5>		
+		</br>
+		<h3>Procedural</h3>
+
+<pre><code><bold>Miguel de Cervantes</bold> escribió el <italic>Quijote</italic></code></pre>
+
+		<h3>Descriptive</h3>
+<pre> Markup<code><name>Miguel de Cervantes</name> escribió el <title>Quijote</title></code></pre>
+<pre> Visualization<code>name {font-weight: bold;} title {font-style: italic;} </code></pre>
+<pre> Process<code><xsl:for-each select="//title"></code></pre>
+		</section>  <!--end example quijote-->
+		
+		
+		<section>
+			
+			<h3>XML Golden Rules </h3>
+<pre> An element is represented by a <b>start-tag</b>, some optional <b>content</b>, and
+an <b>end-tag</b>.<code> <persName>Miguel de Cervantes</persName></code></pre>
+
+<pre> An element may have <b>attributes</b>, each consisting of a name and a value.<code> <name type="person">Miguel de Cervantes</name></code></pre>
+
+<pre> An XML document may contain <b>processing</b> instructions or <b>comments</b>.<code> &lt;? xml-stylesheet type="text/css" href="vizualize-tei-xml.css"?></code>
+<code>     <!-- This is a comment: here starts the first sonnet --></code></pre>
+<pre> Elements and attributes are <b>case sensitive</b>.<code> &lt;name&gt; ≠ &lt;Name&gt;</code></pre>			
+<pre> <b>Empty elements</b> can use a minimized tag syntax.<code> &lt;pb/&gt; = <pb></pb>  </code></pre>			
+			
+														
+		</section>
 			
 					
-			<section id="terminology">
+			<section>
+			
+			<h3>Well-formed (good syntax) </h3>
+			
+			
+			<div class="imagen-texto">
+			
+			<img src="imagenes/editio-wellformed-xml.png"/>
 				
-				<h3>What is markup?</h3>
-				</br>
-				<ul>
-					<li> To encode, to tag. </li>
-					<li> To make explicit (to a machine) what is implicit (to a person). </li>
-					<li> To add value by supplying multiple annotations. </li>     
-					<li> To facilitate re-use of the same material. </li>                   
-				</ul>
+				</div>
+						<ul style="width: 60%; float: right;" >
+			<li>XML-Version, character set (UTF-8);</li>
+			<li>A single root element (first node) contains the XML document;</li>
+			<li>Each element is nested within the root element in a hierarchical structure: no overlapping;</li>
+			<li>Elements, attributes, etc., are case sensitive;</li>  
+			<li>Start-tags and end-tags are mandatory;</li>
+			<li>Attribute values are quoted.</li>
+	
+			</ul>
 			
-			</section>
+			</section> 
 			
-			
-		
 			
 			<section>
-				
-				<h3>XML Golden Rules </h3>
-				
-				<ul>
-					<li> An element is represented by a start-tag, some optional content, and
-					an end-tag.</li>
-					<li> An element may also have attributes, each consisting of a name and
-					a value.</li>
-					<li> An XML document may also contain processing instructions
-					comments or entity references. </li>   
-						<li>An XML document must be well-formed and may be valid.</li>   
-				</ul>
-												
-			</section>
-			
+					
+					<h3>Valid (against the schema)</h3>
+					<h5></h5>
+					
+					<div class="imagen-texto">
+					
+					<img src="imagenes/editio-valid-xml.png"/>
+					
 						
+						</div>
+								<ul style="width: 60%; float: right;" >
+					<li>Well-formed;</li>
+					<li>Follows a structural definition (schema), e.g. TEI;</li>
+					<li>Which elements and attributes are used;</li>
+					<li>Which elements and attributes can appear where;</li>
+					<li>Names, datatypes, and default values for all attributes.</li>
+		
+					</ul>
+					
+					</section> 
 			
 		<section>
 		
@@ -130,8 +207,6 @@
 		
 			<div class="caption">C. Schöch <a class="fuente" href="https://de.dariah.eu/tei-tutorial">Digitale Textedition mit TEI (Tutorial)</a>
 				</div>
-			
-			
 		</div>	
 		
 		</section>  <!-- TEI BUBBLE-->
@@ -145,7 +220,7 @@
 		
 		
 		
-		<section>
+		<section id="tei">
 		
 		<div class="imagen-texto">
 		
@@ -156,19 +231,25 @@
 			</div>
 		
 		<ul style="width: 60%; float: right;" >
-		<li>XML: Język znaczników do opisu struktury danych</li>
-		<li>TEI: Język znaczników do opisu struktury tekstów </li>
-		<li>Międzynarodowy standard</li>
-		<li>Wyłuskiwanie</li>  
-		<li>Przekształcanie </li>
-		<li>Sformatowania </li>
-		<li>Sortowania</li>
-		<li>...</li>
-		</ul>
+		<li>International standard</li>
+				</ul>
 		
 		</section>  <!--TEI definition-->
 		
 		</section>
+						
+		<section>
+			<section id="guidelines">
+				<h3><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Guidelines</a></h3>
+				
+				<img src="imagenes/editio-tei_guidelines.png"/>
+				
+				
+				
+			</section>
+			
+		</section>
+						
 						
 				<!--
 				*****************
@@ -176,22 +257,19 @@
 				*****************
 				-->
 				
+			<section id="biblio">
 				
-				
-				<section id="biblio">
-					
-					<h3> Resources </h3>
-					<h5> The content has been partly adapted from:</h5>
-					<ul style="font-size: 0.7em;">
-					<li><i>A Gentle Introduction to XML, </i><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">Guidelines for Electronic Text Encoding and Interchange</a>, TEI P5: Version 3.0.0. </li>
-					<li><i>digital.humanities @ Oxford, </i><a href="http://tei.it.ox.ac.uk/Talks/">TEI @ Oxford Teaching Pages</a>.</li>
-					<li>Lou Burnard (2014), </i><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"><i>What is the Text Encoding Initiative? How to add intelligent markup to digital resources </i></a>, Marseille: OpenEdition Press.</li>
-					<li>Christof Schöch (2014), <i>Digitale Textedition mit TEI</i>. <a href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>.</li>
-		
+				<h3> Resources </h3>
+				<h5> The content has been partly adapted from:</h5>
+				<ul style="font-size: 0.7em;">
+				<li><i>A Gentle Introduction to XML, </i><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">Guidelines for Electronic Text Encoding and Interchange</a>, TEI P5: Version 3.0.0. </li>
+				<li><i>digital.humanities @ Oxford, </i><a href="http://tei.it.ox.ac.uk/Talks/">TEI @ Oxford Teaching Pages</a>.</li>
+				<li>Lou Burnard (2014), </i><a href="http://books.openedition.org/oep/426"><i>What is the Text Encoding Initiative? How to add intelligent markup to digital resources </i></a>, Marseille: OpenEdition Press.</li>
+				<li>Christof Schöch (2014), <i>Digitale Textedition mit TEI</i>, <a href="https://de.dariah.eu/tei-tutorial">DARIAH TEI-Tutorial</a>.</li>
 	
-					</ul>
-					
-				</section>
+				</ul>
+				
+			</section>
 				
 													
 														<!--
@@ -269,7 +347,3 @@
 
 </body>
 </html>
-
-
-
-
