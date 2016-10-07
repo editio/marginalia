@@ -6,7 +6,7 @@ Tool
 · Framework templates
 · TEI P5
 ·· TEI All [TEI P5]
-- [optional: Save it & rename it]
+- Save it & rename it
 - [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
 
 Transcription
@@ -28,9 +28,10 @@ You need to add these elements and attributes:
 
 Visualization css & the browser
 
-- add a css stylesheed
-- play around with it
-- First capital letter: encode original? 
+- associate a css stylesheet
+- Toggle the author view or open it in the browser 
+- Play around with it
+- First capital letter: encode the original? 
 
 
 Publication.

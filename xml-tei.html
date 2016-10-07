@@ -102,7 +102,7 @@
 		<li>XML is extensible: it does not consist of a fixed set of tags;</li>
 		<li>XML documents must be well-formed according to a defined syntax;</li>
 		<li>XML documents can be formally validated against a schema;</li>
-		<li>XML is more interested in the meaning of data than in its presentation.</li>
+		<li>XML is more about the meaning of data than about presentation.</li>
 		
 		</ul>
 		</section>
@@ -140,8 +140,7 @@
 		<section>
 			
 			<h3>XML Golden Rules </h3>
-<pre> An element is represented by a <b>start-tag</b>, some optional <b>content</b>, and
-an <b>end-tag</b>.<code> <persName>Miguel de Cervantes</persName></code></pre>
+<pre> An element is represented by a <b>start-tag</b>, some optional <b>content</b>, and an <b>end-tag</b>.<code> <persName>Miguel de Cervantes</persName></code></pre>
 
 <pre> An element may have <b>attributes</b>, each consisting of a name and a value.<code> <name type="person">Miguel de Cervantes</name></code></pre>
 
@@ -216,36 +215,100 @@ an <b>end-tag</b>.<code> <persName>Miguel de Cervantes</persName></code></pre>
 		
 		<section>
 		
-		
-		
-		
-		
 		<section id="tei">
-		
 		<div class="imagen-texto">
-		
 		<img src="../manual/imagen/marginalia-tei-logo.jpg"/>
-		
 			<div class="caption"><a class="fuente" href="http://www.tei-c.org">TEI: Text Encoding Initiative</a></div>
-			
 			</div>
 		
 		<ul style="width: 60%; float: right;" >
-		<li>International standard</li>
+				<li>Development of markup for texts;</li>
+				<li>International standard;</li>
+				<li>Interchange of data;</li>
+				<li>Platform independence;</li>
+				<li>Preservation;</li>
+				<li>Research community.</li>
+				<p>P5: Version 3.0.0. Last updated on 29th March 2016</p>
 				</ul>
 		
-		</section>  <!--TEI definition-->
+		</section>  <!--End TEI definition-->
 		
+		<section>
+			<h3>Modular system</h3>
+			<h5>Each module defines a group of elements and attributes</h5>
+			<img src="imagenes/editio-TEI_module.png"/>
 		</section>
+		
+		<section>
+			<h3>TEI basic structure</h3>
+			<img src="imagenes/editio-tei_basic-1.png"/>
+		</section>
+		
+		<section>
+			<h3>TEI basic structure</h3>
+			<h5>&lt;teiHeader&gt;</h5>
+			<img src="imagenes/editio-tei_basic-2.png"/>
+		</section>
+		
+		<section>
+			<h3>TEI basic structure</h3>
+			<h5>&lt;teiHeader&gt;</h5>
+			<img src="imagenes/editio-tei_basic-3.png"/>
+		</section>
+		
+<section>
+	<h3>Data in the &lt;teiHeader&gt;</h3>
+<pre><code><teiHeader>
+  <fileDesc>
+	<titleStmt>
+		<title>Bym złożył sonet, Violente mię prosi</title>
+		<author>Lope de Vega Carpio</author>
+	 </titleStmt>
+	<publicationStmt>
+		<publisher>Workshop's materials (Wrocław)</publisher>
+		<date>14/10/2016</date>
+	 </publicationStmt>
+	<sourceDesc>
+		<bibl></bibl>
+	 </sourceDesc>
+  </fileDesc>
+</teiHeader></code></pre></section>
+		
+			<section>
+				<h3>TEI basic structure</h3>
+				<h5>&lt;text&gt;</h5>
+				<img src="imagenes/editio-tei_basic-4.png"/>
+			</section>
+		
+			<section>
+				<h3>TEI basic structure</h3>
+				<h5>&lt;text&gt;</h5>
+				<img src="imagenes/editio-tei_basic-5.png"/>
+			</section>
+			
+			<section>
+				<h3>TEI basic structure</h3>
+				<h5>&lt;text&gt;</h5>
+				<img src="imagenes/editio-tei_basic-6.png"/>
+			</section>
+			
+		</section>  <!--End TEI structure-->
 						
 		<section>
 			<section id="guidelines">
 				<h3><a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/index.html">Guidelines</a></h3>
-				
-				<img src="imagenes/editio-tei_guidelines.png"/>
-				
-				
-				
+				<img src="imagenes/editio-tei-guidelines-1.png"/>
+			</section>
+			
+			<section id="guidelines">
+				<h3>Information, eg., on an element</h3>
+				<img src="imagenes/editio-tei-guidelines-2.png"/>
+			</section>
+			
+			<section>
+				<h3>Quick look up in the TEI <i>Guidelines</i>. 
+					<a href="javascript:Qr=document.getSelection();if(Qr==''){void(Qr=prompt('Introduce%20TEI-P5%20Element%20Name:%20',''))};if(Qr!='')location.href='http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-'+escape(Qr)+'.html'">TEI-Look up</a>
+				</h3>
 			</section>
 			
 		</section>
