@@ -1,6 +1,6 @@
 Tool
 
-- Open oXygen
+- Open oXygen (click on “Oxygen XML Editor”)
 - Open new document
 - Search or select a document type
 · Framework templates
