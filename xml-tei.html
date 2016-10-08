@@ -38,44 +38,33 @@
 <body>
 
 <div class="reveal">
-		
 	<!-- Any section element inside of this container is displayed as a slide -->
 	<div class="slides">
 			
 		<section>
-		
-			<!--PORTADA-->
-			
+<!--PORTADA-->
 			<section id="portada">  
 				<h2 class="portada">     
-					Markup, XML, TEI <h3> Character, structure, guidelines</h3>
+					Markup, XML, TEI.<h3> Character, structure, guidelines.</h3>
 				</h2><h1><span id="filete">☵</span></h1>
 			</section>  <!--FIN PORTADA-->
 			
-			<!--INDICE-->
-			
+<!--INDICE-->
 			<section id="indice">  <!--ID de las secciones para hacer enlaces-->
-				
 				<h3>Content</h3>
-				
 				<div class="izquierda">
-					
 					<ul>
 						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(1-2)</span></li>
 						<li><a href="#/markup">Markup language</a><span class="weiter">↡(3-10)</span></li>
 						<li><a href="#/tei">Text Encoding Initiative</a><span class="weiter">↡(11-27)</span></li>
 					</ul>
-					
 				</div>
-				
 				<div class="derecha">
-					
 					<ul>
 						<li><a href="#/guidelines">TEI Guidelines</a><span class="weiter">↡(28-31)</span></li>        
 						<li><a href="#/biblio">References</a><span class="weiter">↡(32)</span></li>
 						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡(33)</span></li>
 					</ul>
-					
 				</div>
 			</section> <!--FIN INDICE-->
 			
@@ -93,38 +82,35 @@
 			</ul>
 		</section>
 		
-		
 		<section>
 		
 		<h3>XML vs. HTML</h3>
-		<ul>
-			
+		
+			<ul>
 		<li>XML is extensible: it does not consist of a fixed set of tags;</li>
 		<li>XML documents must be well-formed according to a defined syntax;</li>
 		<li>XML documents can be formally validated against a schema;</li>
 		<li>XML is more about the meaning of data than about presentation.</li>
-		
 		</ul>
 		</section>
 		
 		<section>
 
-	
-					<h3>Procedural Markup</h3>
-											
-					<li>Visual, typographic, representation;</li>
-					<li>WYSWYG:  What You See is <i>ALL</i> you Get.</li>
-					</br>
-					<h3>Descriptive Markup</h3>					
-					<li>Semantic, funcional, structured;</li>
-					<li>Meaning before format.</li>
-					
-				</ul>	
-			
+		<h3>Procedural Markup</h3>
+								
+		<li>Visual, typographic, representation;</li>
+		<li>WYSWYG:  What You See is <i>ALL</i> you Get.</li>
+		</br>
+		<h3>Descriptive Markup</h3>					
+		<li>Semantic, funcional, structured;</li>
+		<li>Meaning before format.</li>
+		</ul>	
 		</section>
 		
 		<section>
+	
 		<h5>"<b>Miguel de Cervantes</b> escribió el <i>Quijote</i>"</h5>		
+		
 		</br>
 		<h3>Procedural</h3>
 
@@ -153,16 +139,11 @@
 														
 		</section>
 			
-					
 			<section>
 			
 			<h3>Well-formed (good syntax) </h3>
-			
-			
 			<div class="imagen-texto">
-			
 			<img src="imagenes/editio-wellformed-xml.png"/>
-				
 				</div>
 						<ul style="width: 60%; float: right;" >
 			<li>XML-Version, character set (UTF-8);</li>
@@ -171,33 +152,28 @@
 			<li>Elements, attributes, etc., are case sensitive;</li>  
 			<li>Start-tags and end-tags are mandatory;</li>
 			<li>Attribute values are quoted.</li>
-	
 			</ul>
-			
 			</section> 
-			
 			
 			<section>
 					
-					<h3>Valid (against the schema)</h3>
-					<h5></h5>
-					
-					<div class="imagen-texto">
-					
-					<img src="imagenes/editio-valid-xml.png"/>
-					
-						
-						</div>
-								<ul style="width: 60%; float: right;" >
-					<li>Well-formed;</li>
-					<li>Follows a structural definition (schema), e.g. TEI;</li>
-					<li>Which elements and attributes are used;</li>
-					<li>Which elements and attributes can appear where;</li>
-					<li>Names, datatypes, and default values for all attributes.</li>
-		
-					</ul>
-					
-					</section> 
+			<h3>Valid (against the schema)</h3>
+			<h5></h5>
+			
+			<div class="imagen-texto">
+			
+			<img src="imagenes/editio-valid-xml.png"/>
+				</div>
+						<ul style="width: 60%; float: right;" >
+			<li>Well-formed;</li>
+			<li>Follows a structural definition (schema), e.g. TEI;</li>
+			<li>Which elements and attributes are used;</li>
+			<li>Which elements and attributes can appear where;</li>
+			<li>Names, datatypes, and default values for all attributes.</li>
+
+			</ul>
+			
+			</section> 
 			
 		<section>
 		
@@ -209,9 +185,8 @@
 				</div>
 		</div>	
 		
-		</section>  <!-- TEI BUBBLE-->
+		</section>  <!-- Fin tei Bubble-->
 			
-						
 		</section>		<!--end terminology-->
 		
 		<section>
@@ -314,7 +289,7 @@
 			</section>
 			
 			<section>
-			<h3>Verse & name annotation</h3>
+			<h3>Verse and name annotation</h3>
 <pre><code><text>&lt;body&gt;
 <lg>
   <l>Bym złożył sonet, &lt;persName&gt;Violente&lt;/persName&gt; mię prosi;</l>
@@ -354,7 +329,8 @@
 &lt;/body&gt;
 </code></pre>
 			</section>
-	<section>
+	
+			<section>
 		<h3>Metatextual markup for editions</h3>
 		<h5>Enriched with corrections, regularizations, expansions</h3>
 		
@@ -405,7 +381,7 @@
 				<img src="imagenes/editio-tei-guidelines-1.png"/>
 			</section>
 			
-			<section id="guidelines">
+			<section>
 				<h3>Information, eg., on an element</h3>
 				<img src="imagenes/editio-tei-guidelines-2.png"/>
 			</section>
@@ -425,18 +401,12 @@
 				<li>possibility to generate your schema;</li>
 				<li>possibility to generate your documentation.</li>
 				</ul>
-				
-				
-				
 			</section>
 			
 		</section>
 						
-						
 				<!--
-				*****************
-				*****Resources****   
-				*****************
+				*****References****   
 				-->
 				
 			<section id="biblio">
@@ -451,26 +421,21 @@
 				</ul>
 				
 			</section>
-				
 													
 														<!--
 														*****************
 														*****CREDITOS****   
 														*****************
 														-->
-		
 		<section id="impressum">
 		
-			 <div><a href="http://www.ifr.uni.wroc.pl/pl/nasz-instytut/pracownicy/dr-jose-luis-losada-palenzuela">José Luis Losada Palenzuela</a>, <i>Markup, XML, TEI. Character, structure, guidelines</i>, <a href="http://editio.github.io/slides/editions">&lt;http://editio.github.io/slides/xml-tei&gt;</a>, 2016.</div>			 
+			 <div><a href="http://www.ifr.uni.wroc.pl/pl/nasz-instytut/pracownicy/dr-jose-luis-losada-palenzuela">José Luis Losada Palenzuela</a>, <i>Markup, XML, TEI. Character, structure, guidelines</i>, <a href="http://editio.github.io/slides/xml-tei">&lt;http://editio.github.io/slides/xml-tei&gt;</a>, 2016.</div>			 
 			 <h2 id="filete">✽</h2>
 
-			 
-			 <div id="licencia"><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="License Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a></div>
+			 <div ><a href="http://creativecommons.org/licenses/by-sa/4.0/"><img class="licencia" alt="License Creative Commons" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"></a></div>
 			</div>	
 				
-				
-		</section>  <!--CRÉDITOS-->
-		
+		 </section>  <!--impressum-->
 		
 	</div> <!--End of slides container-->
 
@@ -508,16 +473,16 @@
 
 <div class="footer">
 
-<p> José Luis Losada Palenzuela · Uniwersytet Wrocławski</p>
+<p>José Luis Losada Palenzuela · Uniwersytet Wrocławski</p>
 			
 </div> <!--FIN FOOTER FIRMA-->
 
 <div id="menu">
-<a href="#/indice">☰</a> 
+<a href="#/indice" title="Content">☰</a> 
 </div>   <!--FIN INDICE-->
 
 <div id="logo">
-<a href="http://www.uni.wroc.pl"><img src="imagenes/logo_UWr_wer_rozsz_P3015.png" title="Índice"/></a> 
+<a href="http://www.uni.wroc.pl"><img src="imagenes/logo_UWr_wer_rozsz_P3015.png" title="Universidad de Wrocław"/></a> 
 </div> <!--FIN LOGO-->
 
 </body>
