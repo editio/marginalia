@@ -63,7 +63,7 @@
 					<ul>
 						<li><a href="#/portada">Frontmatter</a><span class="weiter">↡(1-2)</span></li>
 						<li><a href="#/markup">Markup language</a><span class="weiter">↡(3-10)</span></li>
-						<li><a href="#/tei">TEI</a><span class="weiter">↡(11-)</span></li>
+						<li><a href="#/tei">Text Encoding Initiative</a><span class="weiter">↡(11-27)</span></li>
 					</ul>
 					
 				</div>
@@ -71,9 +71,9 @@
 				<div class="derecha">
 					
 					<ul>
-						<li><a href="#/guidelines">Guidelines</a><span class="weiter">↡()</span></li>        
-						<li><a href="#/biblio">Resources</a><span class="weiter">↡()</span></li>
-						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡()</span></li>
+						<li><a href="#/guidelines">TEI Guidelines</a><span class="weiter">↡(28-31)</span></li>        
+						<li><a href="#/biblio">References</a><span class="weiter">↡(32)</span></li>
+						<li><a href="#/impressum"><i>Impressum</i></a><span class="weiter">↡(33)</span></li>
 					</ul>
 					
 				</div>
@@ -229,7 +229,7 @@
 				<li>Platform independence;</li>
 				<li>Preservation;</li>
 				<li>Research community.</li>
-				<p>P5: Version 3.0.0. Last updated on 29th March 2016</p>
+				<p>TEI P5: Version 3.0.0. Last updated on 29th March 2016</p>
 				</ul>
 		
 		</section>  <!--End TEI definition-->
@@ -258,7 +258,7 @@
 		</section>
 		
 <section>
-	<h3>Data in the &lt;teiHeader&gt;</h3>
+	<h3>Content in the &lt;teiHeader&gt;</h3>
 <pre><code><teiHeader>
   <fileDesc>
 	<titleStmt>
@@ -294,15 +294,108 @@
 			</section>
 			
 			<section>
-				<h3>Data in the &lt;text&gt;</h3>
+				<h3>Content in the &lt;text&gt;</h3>
+<pre><code style="font-size: 1.4em;"><text>
+    &lt;body&gt;
+      <div>
+         &lt;head&gt;Do czytelnika&lt;/head&gt;
+         <p>Ani sprawiedliwemu zasady, ani mądremu rady, chociaż nikt ich nie zna w stopniu dostatecznym dla siebie samego.</p>
+      </div>
+    &lt;/body&gt;
+ </text></code></pre>
+				
 			</section>
 			
 			<section>
-				<h3>Structure and semantic elements</h3>
+				<h3>Classes of elements</h3>
+				
+				<li>grouped semantically: names, places, titles, ...</li>
+				<li>grouped structurally: divisions, paragraphs, verses,...</li>
 			</section>
 			
-
+			<section>
+			<h3>Verse & name annotation</h3>
+<pre><code><text>&lt;body&gt;
+<lg>
+  <l>Bym złożył sonet, &lt;persName&gt;Violente&lt;/persName&gt; mię prosi;</l>
+  <l>nierazem znoił w takowym rygorze:</l>
+  <l>czternaście wierszów sonet pojąć może.</l>
+  <l>Trzy z przodka fraszka ze śmiechem unosi.</l>
+</lg>
+&lt;/body&gt;
+</code></pre>
+			</section>
 			
+<section>
+	<h3>Atributtes inside of elements</h3>
+	
+<div style="font-size: 1.5em;"><pre> Provides a unique identifier for any element:<code>  @xml:id </code></pre>
+
+<pre> Provides a name or number for any element:<code>  @n </code></pre>
+
+<pre> Specifies the language of any element:<code>  @xml:lang </code></pre>
+
+<pre> Characterizes the element in some sense:<code>  @type </code></pre>
+
+<pre> Specifies the visual appearance (rendition):<code>  @rend, @style, @rendition </code></pre></div>
+
+</section>
+
+<section>
+			<h3>Atributtes and elements</h3>
+<pre><code><text>
+  &lt;body&gt;
+   <lg type="cuarteto">
+      <l n="1">Bym złożył sonet, Violente mię prosi;</l>
+      <l n="3">nierazem znoił w takowym rygorze:</l>
+      <l n="4">czternaście wierszów sonet pojąć może.</l>
+      <l n="5">Trzy z przodka fraszka ze śmiechem unosi.</l>
+   </lg>
+&lt;/body&gt;
+</code></pre>
+			</section>
+	<section>
+		<h3>Metatextual markup for editions</h3>
+		<h5>Enriched with corrections, regularizations, expansions</h3>
+		
+	<div style="font-size: 1.5em;"><pre style="text-align:center ;"> Groups alternative encodings: <code >  <choice> </code></pre>
+	
+<pre> Apparent error:<code> <sic> </code></pre>
+	
+<pre> Corrected error: <code> <corr> </code></pre>
+	
+<pre> Original form: <code> <orig> </code></pre>
+	
+<pre> Regularized form: <code> <reg> </code></pre></div>
+	
+	</section>		
+	
+	<section>
+				<h3>Markup for corrections</h3>
+<pre><code>&lt;body&gt;
+   <lg type="cuarteto">
+      <l n="1">Bym złożył sonet, 
+      
+      			<choice>
+                 <sic>Violente</sic>
+                 <corr>Violante</corr>
+	          </choice> 
+	          
+	mię prosi;</l>
+	  <l n="3">nierazem znoił w takowym rygorze:</l>
+	  <l n="4">czternaście wierszów sonet pojąć może.</l>
+	  <l n="5">Trzy z przodka fraszka ze śmiechem unosi.</l>
+   </lg>
+&lt;/body&gt;</code></pre>
+				</section>
+	
+	<section>
+	
+	<h3>Critical Apparatus, Dictionaries, Manuscript Description, Bibliographies, ...</h3>
+	<h5>nearly 500 elements </h5>
+	
+	</section>
+	
 			
 		</section>  <!--End TEI structure-->
 						
@@ -318,9 +411,23 @@
 			</section>
 			
 			<section>
-				<h3>Quick look up in the TEI <i>Guidelines</i>. 
+				<h3>Quick look up in the TEI <i>Guidelines</i>. </h3>
 					<a href="javascript:Qr=document.getSelection();if(Qr==''){void(Qr=prompt('Introduce%20TEI-P5%20Element%20Name:%20',''))};if(Qr!='')location.href='http://www.tei-c.org/release/doc/tei-p5-doc/en/html/ref-'+escape(Qr)+'.html'">TEI-Look up</a>
-				</h3>
+
+			</section>
+			
+			<section>
+				<h3>TEI Roma (tool)</h3>
+				<h5><a href="http://www.tei-c.org/Roma">Generating customizations for the TEI</a></h5>
+				<ul>
+				<li>possibility to choose your modules;</li>
+				<li>possibility to create new elements;</li>
+				<li>possibility to generate your schema;</li>
+				<li>possibility to generate your documentation.</li>
+				</ul>
+				
+				
+				
 			</section>
 			
 		</section>
