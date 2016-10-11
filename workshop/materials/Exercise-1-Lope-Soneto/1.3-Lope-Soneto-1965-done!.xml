@@ -8,23 +8,26 @@
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
-         <titleStmt>
+         <titleStmt>           
             <title>Bym złożył sonet, Violente mię prosi</title>
             <author>Lope de Vega Carpio</author>
          </titleStmt>
-         <publicationStmt>
+         
+         <publicationStmt>         
             <publisher>Workshop's materials (Wrocław)</publisher>
             <date>14/10/2016</date>
          </publicationStmt>
+         
          <sourceDesc>
-            <bibl>
+            <bibl>               
                <title>Sonety hiszpańskie</title>
                <editor role="tłumacz">Jan Winczawiewicz</editor>
                <pubPlace>Londyn</pubPlace>
                <publisher>Oficyna Poetów i Malarzy</publisher>
-               <date>1965</date>
+               <date>1965</date>               
             </bibl>
          </sourceDesc>
+         
       </fileDesc>
    </teiHeader>
    <text>

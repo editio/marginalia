@@ -32,14 +32,12 @@ titleStmt author, title, docAuthor {
 
 /*Sonets*/
 
-
 l {
   margin-left: 20px;
   display: block;
 }
 
 /*Sonet's First capital letter */
-
 
 /*l[n="1"]:first-letter { 
 float:left; 
@@ -50,11 +48,9 @@ color: tomato;
 text-indent:0em;
 }*/
 
-
 lg[type=cuarteto] {
 	
-padding: 4px;
-	
+padding: 4px;	
 }
 
 lg[type=terceto] {
@@ -68,15 +64,12 @@ hi[rend='bold']
  	font-weight: bold;
 }
 
-
 /*Normalisation*/
 /*To show  original and/or normalised reading */ 
 
-orig {display: none;
-}
+orig {display: none;}
 
-/*reg {display: none   
-}*/
+/*reg {display: none}*/
 
 
 /*Errors*/
@@ -103,5 +96,3 @@ rdg[wit="#wit-1617-O"] {
 	
 	display: none;
 }*/
-
-
