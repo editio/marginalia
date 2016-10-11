@@ -1,12 +1,11 @@
-# Minimal Theme
+# TEI Workshop's materials 
 
-[Demo the Theme](http://orderedlist.github.com/minimal/)
+Exercise-1-Lope-Soneto
+Exercise-2-Lope-Soneto-Normalization
+Exercise-3-Lope-Readings
+[Exercises](https://github.com/editio/slides/tree/gh-pages/workshop/materials/)
 
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
-
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
-
-# License
+## License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
 
