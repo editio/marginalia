@@ -29,7 +29,7 @@ Publication:
 
 same steps applied as in exercise 1
 
-Enconding metadata:
+Encoding metadata:
 
 <normalization>
 

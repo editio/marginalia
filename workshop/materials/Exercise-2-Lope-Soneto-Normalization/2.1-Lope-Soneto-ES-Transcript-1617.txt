@@ -7,4 +7,6 @@ Vn ſoneto me manda hazer Violante,que en mi vida me he viſto en tanto aprieto
 Transcription from:
 Lope de Vega Carpio, La niña de la plata, Parte IX de Comedias de Lope de vega. Madrid, 1617. <https://books.google.it/books?id=GbtdAAAAcAAJ>
 
-Long S (HTML Entity)  &#383;
+Long S (HTML Entity decimal)  &#383;
+
+(oXygen: edit > insert from character map)

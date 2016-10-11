@@ -1,69 +1,97 @@
-Tool
+Workshop "Digital Scholarly Editions with TEI" (José Luis Losada Palenzuela) 
 
-- Open oXygen (click on “Oxygen XML Editor”)
-- Open new document
-- Search or select a document type
-· Framework templates
-· TEI P5
-·· TEI All [TEI P5]
-- Save it & rename it
-- [optional: Save it just on the desktop into a folder named, e.g.: 'edition']
+Exercise 1 - Instructions: 
 
-Transcription
+TOOL (Creating a new TEI-XML File).
 
-Transcribe from the scan the sonnet in Polish into the <body> element (or use the transcription provided) 
+- Open oXygen (to open click on “oxYgen XML Editor”).
+- Open new document (oXygen menu: File > New document).
+- Search or select a document type (Framework templates > TEI P5 > TEI All [TEI P5]).
+- Save it and rename it (you may save it just on the desktop into a folder named, e.g.: 'edition').
 
-Encoding
+TRANSCRIPTION.
 
-You need to add these elements and attributes:
+- Cancel the dummy text "Some text here." between the opening <p> and the closing </p> within the <body> element. 
+- Transcribe from the scan the sonnet in Polish  (... or use the transcription provided).
+- Insert (or transcribe directly) the text into the opening <p> and the closing </p>.
+
+The document should be now well-formed (a green square is visible in the upper right-hand corner) 
+
+ENCODING.
+
+You are encoding a sonnet, so you need to add these elements:
+
+<l>: verse line 
+<lg>: line group (verse lines functioning as a formal unit, e.g.: sonnet: 14 verses lines; quatrain: 4 verses lines; tercet: 3 verses lines). 
+
+- Start canceling the opening <p> and the closing </p>, we don't need them for a sonnet.
+- Don't worry about the red square (it means the document is not, yet, well-formed.)  
+- Surround the first verse line with a the opening <l> and the closing </l>. Proceed the same way with all lines (you can try a shortcut: Highlight the verse line, press control-e, and in the contextual menu type 'l', for the element name).
+
+The document should be now well-formed (a green square is visible in the upper right-hand corner)
+
+- Now encode all line groups, i.e., the sonnet, the 2 quatrains and 3 tercets. Surround with <lg> </lg> all verses lines (that is the whole sonnet) and go on successively for each quatrain and tercet. The structure should look like:
 
 <lg>
-<l>
+<lg>
+   	<l>...</l>
+	<l>...</l>
+    <l>...</l>
+	<l>...</l>
+  </lg>
+		...
+  </lg>
 
-<lg type="soneto">
-<lg type="cuarteto">
-<lg type="terceto">
-
-<l n="1">
-
-Visualization css & the browser
-
-- associate a css stylesheet
-- Toggle the author view or open it in the browser 
-- Play around with it
-- First capital letter: encode the original? 
+(Have a look at the file provided "1.2-Lope-Soneto-empty.xml" if you have trouble getting it done).  
 
 
-Publication.
+- Add now the attributes to markup the strophes and the number lines (remember to add the quotation marks):
 
-Go to the application menu bar to: 
+<lg type="soneto">: line group for the whole poem.
+<lg type="cuarteto">: line group for a quatrain.
+<lg type="terceto">: line group for a tercet.
+<l n="1">: verse line number. 
 
-- Configure transformation scenarios (/Document>transformation>Configure transformation scenarios)
-- Apply transformation scenarios (/Document>transformation>Apply transformation scenarios)
-...
-Does not work docx, odt (el texteditor normal sí los abre. Se puede volver a grabar desde allí)
-Does not work: pdf polish encoding
+VISUALIZATION (web browser and oXygen editor mode).
 
+- Associate a css stylesheet by copying and pasting the following instruction just before the <TEI> root element: <?xml-stylesheet type="text/css" href="visualize-tei-xml.css"?> (Eventually you can also go to the oXygen menu: Document > XML Document > Associate XSLT/CSS Stylesheet; Browse for the local file "visualize-tei-xml.css" provided in the materials and add it).
+- Open your encoded XML-TEI file it in the web browser (drag and drop into the browser may just work fine).
+- Other way to visualize is to toggle the "Author mode" in oXygen (look for the 3 tabs "Text, Grid, Author" in the bottom of the window).
+- Familiar with CSS stylesheet? Open it in oXygen and play around with it.
 
-Encoding metadata.
+PUBLICATION.
 
-You need to add:
+We can generate a html (web page document) from of our TEI-XML file.
 
+- In the oXygen menu bar go to Document > Transformation > Configure transformation scenarios.
+- Choose "TEI P5 XHTML" and click on "Apply associated".
+- Your html document should be now in the same location where you save your XML-TEI file.
+- Open it in a web browser. 
+
+ENCODING METADATA.
+
+Add some description information to your file. 
+
+- 
+
+Add some bibliographic information to your file. 
+
+- 
 <bibl>
 
-Did you finish already?
+In the meantime you can try again with visualization and publication to see the changes you included.
+
+DID YOU FINISH ALREADY?
 
 Violante or Violente? 'Violente' in the Polish version is a typo, so go for it and encode the correction.
 
-You need to add:
+- Search in the TEI Guidelines for a solution looking for 'choice' (<choice>, <sic>, <corr>).
 
-Look up for <choice> in the TEI Guidelines.
-
-
-Did you finish already (again)?
+DID YOU FINISH ALREADY (AGAIN)?
 
 The first letter in the original is highlighted. Do we encode it?
 
-You need to add:
+- Search in the TEI Guidelines for a solution looking for 'hi' (<hi>) and the attribute @rend.
 
-Look up for <hi> in the TEI Guidelines and also the attribute @rend.
+
+* I provided you with the XML-TEI file already done. Feel free to have a look or ask me for help.
