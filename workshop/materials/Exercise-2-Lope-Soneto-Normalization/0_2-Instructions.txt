@@ -45,12 +45,14 @@ Feeling strong with the old spelling in Spanish?
 - Follow the steps as in exercise 1.
 - The CSS Stylesheet will show there regularized version. In order to visualize the original version: open “visualize-tei-xml.css” in oXygen;  place the cursor on line 72 ( /*reg {display: none}*/ ); go to Document > Edit > Toggle Comment; place the cursor on line 70 ( orig {display: none;} ); go to Document > Edit > Toggle Comment. Save the changes and refresh the page in the browser.  
 
-Publication:
+// PUBLICATION.
 
-same steps applied as in exercise 1
+- Follow the steps as in exercise 1.
 
-Encoding metadata:
+// ENCODING METADATA (<teiHeader>).
 
-<normalization>
+Add some information to your file about how are you transcribe and/or normalizing the text, e.g., the long S, etc.
 
-<repository>
+- Search in the TEI Guidelines for a solution looking for 'encodingDesc' (<encodingDesc>, <editorialDecl>, <normalization>.
+
+* I provided you with a TEI-XML file already encoded “2.2-Lope-Soneto-ES-1617-done!.xml”. Feel free to have a look inside or ask me for help.
