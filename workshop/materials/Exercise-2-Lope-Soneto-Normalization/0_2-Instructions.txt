@@ -43,7 +43,7 @@ Feeling strong with the old spelling in Spanish?
 // VISUALIZATION (Web browser and oXygen editor mode).
 
 - Follow the steps as in exercise 1.
-- The CSS Stylesheet will show there regularized version. In order to visualize the original version: open “visualize-tei-xml.css” in oXygen;  place the cursor on line 72 ( /*reg {display: none}*/ ); go to Document > Edit > Toggle Comment; place the cursor on line 70 ( orig {display: none;} ); go to Document > Edit > Toggle Comment. Save the changes and refresh the page in the browser.  
+- The CSS Stylesheet will show the regularized version. In order to visualize the original version: open “visualize-tei-xml.css” in oXygen;  place the cursor on line 72 ( /*reg {display: none}*/ ); go to Document > Edit > Toggle Comment; place the cursor on line 70 ( orig {display: none;} ); go to Document > Edit > Toggle Comment. Save the changes and refresh the page in the browser.  
 
 // PUBLICATION.
 
@@ -51,8 +51,16 @@ Feeling strong with the old spelling in Spanish?
 
 // ENCODING METADATA (<teiHeader>).
 
-Add some information to your file about how are you transcribe and/or normalizing the text, e.g., the long S, etc.
+Add some information to your file about how are you transcribing and/or normalizing the text, e.g., the long S, etc.
 
 - Search in the TEI Guidelines for a solution looking for 'encodingDesc' (<encodingDesc>, <editorialDecl>, <normalization>.
 
+
+// DID YOU FINISH ALREADY?
+
+cartorze, catorze, catorce? 'cartorze' in Spanish is a typo, it should be 'catorze', but again we need to normalize it into 'catorce';  so go for it and encode the correction and the normalization.
+
+- Search in the TEI Guidelines for a solution looking for 'sic' and 'corr' (<choice>, <sic>, <corr>).
+
 * I provided you with a TEI-XML file already encoded “2.2-Lope-Soneto-ES-1617-done!.xml”. Feel free to have a look inside or ask me for help.
+

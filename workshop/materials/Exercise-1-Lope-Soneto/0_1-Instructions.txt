@@ -71,7 +71,7 @@ We can generate a html (a simple web page document) from of our TEI-XML file.
 
 - In the oXygen menu bar go to Document > Transformation > Configure transformation scenarios.
 - Choose "TEI P5 XHTML" and click on "Apply associated".
-- Your html document should be now in the same location where you save your TEI-XML file.
+- Your html document should be now in the same location where you saved your TEI-XML file.
 - Open it in a web browser. 
 
 // ENCODING METADATA (<teiHeader>).
@@ -84,8 +84,8 @@ Add some descriptive information to your file, e.g., a title to your edition.
 Add some bibliographic information to your file. 
 
 - Use bibliographic information provided in the transcription "1.1-Lope-Soneto-PL-Transcript-1965.txt"
-- Cancel the dummy text "Information about the source and de <p></p> element within <sourceDesc> (source description). (You could just put within the <p> element the whole reference, but we want a more precise bibliographic reference.
-- In the <sourceDesc> create a <bibl></bibl> element (bibliographic citation). Inside you need to add  following elements and one attribute: 
+- Cancel the dummy text "Information about the source and the <p></p> element within <sourceDesc> (source description). (You could just put within the <p> element the whole reference, but we want a more precise bibliographic reference.
+- In the <sourceDesc> create a <bibl></bibl> element (bibliographic citation). Inside you need to add following elements and one attribute: 
 
 <title>
 <editor role="tłumacz">

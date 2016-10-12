@@ -1,0 +1,55 @@
+José Luis Losada: TEI Workshop's materials (Wrocław)
+ 
+EXERCISE 3 - INSTRUCTIONS: 
+
+// TOOL (Creating a new TEI-XML File).
+
+- Follow the steps as in exercise 1.
+
+// TRANSCRIPTION.
+
+You are going to transcribe the Spanish version in the Polish bilingual edition and compare it (collate) with the original (already normalized).
+
+- Transcribe from the scan “3.0-Lope-Soneto-scan-ES-1965-readings.pdf” the sonnet in Spanish (… or use the transcription provided “3.1-Lope-sonetos-ES-Transcript-1965_1617.txt”).
+
+- Collate the two version in order to find the different readings (... or use the collation provided "3.2-Lope-Soneto-collation-juxtacommons.png"
+
+Take into consideration some of the steps from exercise 1.
+
+// ENCODING METADATA (<teiHeader>).
+
+Before you start using the transcripts, you need to add some useful information in the TEI Header, <sourceDesc>: the witnesses list (the two Spanish versions). You need to add these elements and attributes:
+
+<listWit>: 
+<witness xml:id="">
+
+xml:id="wit-1965-PL"
+xml:id="wit-1617-O"
+
+// ENCODING.
+
+You are going to encode the apparatus, i.e., the different readings from the two witnesses. You need to add these elements and attributes:
+
+<app>
+<rdg wit="">
+
+wit="#wit-1617-O"
+wit="#wit-1965-PL"
+
+// VISUALIZATION (Web browser and oXygen editor mode).
+
+- Follow the steps as in exercise 1
+- Toggle the comment on rdg[wit="#wit-1965-PL"] and rdg[wit="#wit-1617-O"]
+
+// PUBLICATION.
+
+- Follow the steps as in exercise 1.
+- oXygen will create a html with the apparatus.
+
+// DID YOU FINISH ALREADY?
+
+- Check out http://juxtacommons.org, a tool that allows you to compare and collate versions of the same textual work.
+
+
+* I provided you with a TEI-XML file already encoded “3.4-Lope-Soneto-Readings-ES-1617-1965.xml”. Feel free to have a look inside or ask me for help.
+
