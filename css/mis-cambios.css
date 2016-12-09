@@ -106,10 +106,6 @@ white-space: pre\9; /* IE7+ */
   color: black;
  }
 
-
-
-
-
 /*ICONO DEL MENÚ - arriba a la izquierda*/
 
 	  
@@ -126,7 +122,6 @@ white-space: pre\9; /* IE7+ */
 	 	 	 border-radius: 0 1em 1em 0;
 font-size: 1.3em;
 	 } 
-	  
 
 #menu a {
   color: #8F8F8F;
@@ -413,7 +408,7 @@ ul.menu_num ul li {
 	color: #383d3d;
 }
 
-
+ 
 ul.menu_none {
 
 	list-style-type: none;
@@ -518,9 +513,8 @@ p.cita-background {
 
 color: white; 
 background-color: black; 
-	font-size: 60%;
+	font-size: 70%;
 	text-align: justify;
-	
 	padding: 0.3em;
 	
 	-webkit-border-radius:  0 1em 0 1em;
@@ -528,13 +522,8 @@ background-color: black;
 	 -o-border-radius: 0 1em 0 1em;
 	 border-radius: 0 1em 0 1em;
 	
-display: inline-block;
-	
+    display: inline-block; /*the div wrap on the text*/
 }
-
-
-
-
 
 div.fuente {
 	
