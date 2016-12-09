@@ -178,7 +178,7 @@ font-size: 1.3em;
 #logo img {
 	border: 0;  /*puesto solo para IE*/
 	
- 	max-height: 80px;
+ 	max-height: 70px;
 	
 }
 
@@ -420,9 +420,19 @@ ul.menu_none {
 
 	}
 	
-	ul li {
+ul li {
 			font-size: 4em;
 	}
+
+
+li.no-bullet {
+
+list-style-type: none;
+font-size: 0.8em;
+	
+}
+
+
 
 /*FOOTER*/
 
@@ -503,6 +513,29 @@ text-indent: 30px;
 }
 
 
+p.cita-background {
+	
+
+color: white; 
+background-color: black; 
+	font-size: 60%;
+	text-align: justify;
+	
+	padding: 0.3em;
+	
+	-webkit-border-radius:  0 1em 0 1em;
+	-ms-border-radius: 0 1em 0 1em;
+	 -o-border-radius: 0 1em 0 1em;
+	 border-radius: 0 1em 0 1em;
+	
+display: inline-block;
+	
+}
+
+
+
+
+
 div.fuente {
 	
 text-align: right;
@@ -526,6 +559,25 @@ content: "–" ;
 font-size: 120%;
 padding-right: 4px;
 }
+
+span.fuente-image-background 
+{
+	
+text-align: right;
+color: white;
+margin-top: 25px;
+background-color: gray; 
+font-size: 45%;
+padding: 0.3em;
+
+-webkit-border-radius:  0 1em 0 1em;
+-ms-border-radius: 0 1em 0 1em;
+ -o-border-radius: 0 1em 0 1em;
+ border-radius: 0 1em 0 1em;
+
+}
+
+
 
 
 /* TWITTER para colocarlo en todas las diapositivas*/
@@ -554,6 +606,11 @@ color: #8e0905;
    background-color: #eeea62; /*color del fondo; una escala de grises, puede ir también en HEX, en este caso #E0E0E0; una variación del amarillo #FFFFCC*/
 }
 
+div.licencia {
+	
+font-size: 0.4em;
+	
+}
 
 
 

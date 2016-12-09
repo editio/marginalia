@@ -39,23 +39,23 @@ l {
 
 /*Sonet's First capital letter */
 
-/*l[n="1"]:first-letter { 
+l[n="1"]:first-letter { 
 float:left; 
 margin:0 3px 0 0; 
 font-size:3em;
 line-height:92%;
 color: tomato; 
 text-indent:0em;
-}*/
+
+}
+
 
 lg[type=cuarteto] {
-	
 padding: 4px;	
 }
 
 lg[type=terceto] {
-	
-	padding: 4px;
+padding: 4px;
 }
 
 hi[rend='bold']
@@ -65,7 +65,7 @@ hi[rend='bold']
 }
 
 /*Normalisation*/
-/*To show  original and/or normalised reading */ 
+/*To show original and/or normalised reading */ 
 
 orig {display: none;}
 
