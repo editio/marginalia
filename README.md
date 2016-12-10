@@ -1,3 +1,11 @@
+# Presentations from editio. 
+
+This repository was forked from hakimel/reveal.js in order to be used for my presentations (I'm adding just new content). I've adapted the visualization for my needs changing the .css, but the core remains unchanged. I keep the original readme.md file.
+
+In [http://editio.github.io](http://editio.github.io) you find access to more presentations and projects.  
+
+______ _____
+
 # reveal.js [![Build Status](https://travis-ci.org/hakimel/reveal.js.svg?branch=master)](https://travis-ci.org/hakimel/reveal.js)
 
 A framework for easily creating beautiful presentations using HTML. [Check out the live demo](http://lab.hakim.se/reveal-js/).
