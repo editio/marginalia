@@ -516,10 +516,12 @@ background-color: black;
 	text-align: justify;
 	padding: 0.3em;
 	
+/*
 	-webkit-border-radius:  0 1em 0 1em;
 	-ms-border-radius: 0 1em 0 1em;
 	 -o-border-radius: 0 1em 0 1em;
 	 border-radius: 0 1em 0 1em;
+*/
 	
     display: inline-block; /*the div wrap on the text*/
 }
