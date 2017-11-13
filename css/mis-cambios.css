@@ -5,8 +5,11 @@
 /*Copio y modifico aquí algunos de los elementos del css del them serif.   miscambios.css overwrites it porque está el úlitmo en el header*/
 
 
+/*Listas numeradas como índices: 1.1., 1.2.*/
 
-
+ol { counter-reset: item }
+ol li { display: block }
+ol li:before { content: counters(item, ".") ". "; counter-increment: item }
 
 /*Imagenes solas*/
 
