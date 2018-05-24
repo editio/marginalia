@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Lausanne workshop · comhum</title>
+<meta name="description" content="Digital Mapping">
+<meta name="author" content="José Luis Losada">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="apple-touch-icon" type="image/png" href="../manual/imagen/edigital.png"> 
+<link rel="shortcut icon" type="image/x-icon" href="../manual/imagen/favicon.ico">
+
+<!-- Hojas de estilo-->
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/black.css" id="theme">
+<link rel="stylesheet" href="css/mis-cambios.css">
+	
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/github.css">
+
+<!-- Printing and PDF exports -->
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="reveal">
+	<!-- Any section element inside of this container is displayed as a slide -->
+	<div class="slides"  style="font-size: 1.1em"> <!-- Una fuente un poco más grande para todas las slides. -->
+
+<section>
+
+<!--PORTADA-->
+<section id="portada">  
+        <h3 class="portada">     
+            Map visualization and quantification of literary places in a Spanish corpus
+        </h3>
+         <h5>
+                    <i class="far fa-map" aria-hidden="true" style="font-size:1.5em; color:orange"></i>
+                </h5>
+                
+        <h5 style="font-size: 0.6em"><a href="http://wp.unil.ch/llist/en/event/comhum2018/">Workshop on Computational Methods in the Humanities </a> · Lausanne · 2018</h5> <!-- be water -->
+    </section>  <!--FIN PORTADA-->
+		
+<!--INDICE-->
+<section id="contents" >  <!--ID de las secciones para hacer enlaces-->
+    <h3>Contents</h3>
+    <ul>
+        <li class="no-bullet"><a href="#/portada">Title</a></li>
+        <li><a href="#/theory">1) Theoretical framework</a> <span class="weiter"> (3)</span></li>
+        <li><a href="#/history">2) Literary mapping</a><span class="weiter">↡(4-7)</span></li>
+        <li><a href="#/method">3) Methodological framework</a><span class="weiter">↡(8-13)</span></li>
+        <li><a href="#/cluster">4) Quantitative map visualization</a><span class="weiter">↡(14-23)</span></li>
+        <li><a href="#/itinerary">5) Visualization of itineraries</a><span class="weiter">↡(24-29)</span></li>
+        <li><a href="#/conclusions">6) Final remarks</a><span class="weiter"> (30)</span></li>
+        <li class="no-bullet"><a href="#/references">References</a></li>
+        <li class="no-bullet"><a href="#/impressum"><i>Impressum</i></a></li>
+    </ul>
+
+    </section> <!--FIN INDICE-->
+
+</section> <!--FIN PORTADA E INDICE-->
+
+<!--CONTENIDO-->
+
+<section id="theory">
+
+<h3>1) Theoretical framework</h3>
+<div style="box-shadow: none"; class="imagen-texto">
+
+	<img style="box-shadow: none; border: none" src="imagenes/mapping.Piatti.Umschlag.png"/>
+	
+	<div class="caption">Piatti, B., <i>Die Geographie der Literatur</i>, 2008</div>
+
+</div>	
+
+<ul style="width: 60%; float: right;">
+<li>spatial turn</li>
+<li style="text-decoration: line-through">geographies of literary corpora</li>
+<li>fictional literary geography:</li>
+<ul style="font-size: 0.7em">
+    <li>basic quantitative analysis (places);</li>
+    <li>vizualisation of places &amp; itineraries.</li>
+</ul>
+</ul>
+    
+    </section>
+
+<section >
+    <section id="history">
+        <h3>2) Literary mapping </h3>
+                    
+        <p class="cita" style="font-size: 0.8em">
+            "the knowledge of GEOGRAPHY is, which, in that respect therefore is of ∫ome, and not without iu∫t cau∫e called <span class="resaltado"><i>The eye of Hi∫tory</i></span> [...] the reading of <span class="resaltado"><i>Hi∫tories</i></span> doeth both ∫eeme to be much more plea∫ant, and in deed ∫o it is, when the Mappe being layed before our eyes, we may behold things done, or places where they were done, as if they were at this time pre∫ent and in doing." <span class="fuente">(Ortelius, <i>The theatre of the vvhole world</i>, London, 1606: 4v)</span>
+        </p>                    
+            
+            <p class="cita" style="font-size: 0.8em">
+            “For the courtiers do not stir from their rooms or beyond the threshold of their court, but travel over the whole world <span class="resaltado">merely by looking at a map</span>, without a farthing's cost or suffering heat or cold, hunger, or thirst.” <span class="fuente">(Cervantes, <i>Don Quixote</i>, 1615, 2, VI)</span>
+        </p>
+            
+           <!-- Latin Quote
+               <p style="font-size: 0.8em>Geographiae (quae merito a quibusdam Historiae oculus appellara est) cognitio.
+                Omitto iam, multo iucundiorem videri, &amp; esse, historiarum lectionem, si Tabulis ob oculos propositis liceat quasi praesentem, res gestas, aut loca in quibus gestae sunt, intueri.
+                   <span class="fuente">(Ortelius, <i>Theatrum Orbis Terrarum</i>, 1592)</span>
+                   </p>
+                   -->        
+    </section>
+      
+    <section>
+<h4>Literary maps by cartographers </h4>
+<div style="box-shadow: none"; class="imagen-texto">
+
+	<img style="box-shadow: none; border: none" src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Utopia.ortelius.jpg"/>
+	
+	<div class="caption">Vtopiae typus. [...] Descriptione D. Thomas Mori, Delineatione Abrahami Ortelij · <a href="https://commons.wikimedia.org/wiki/File:Utopia.ortelius.jpg">  wikimedia</a></div>
+
+</div>	
+
+<div style="box-shadow: none;" class="imagen-texto-right">
+
+<img style="box-shadow: none; border: none" src="imagenes/mapping.dh.quijote.png"/>
+
+<div class="caption">Map of Don Quixote's adventures in a <i>Quijote</i> edition, by the geographer Tomás López, 1780 <a href="http://bdh.bne.es/bnesearch/detalle/bdh0000193109#"> &copy; BNE </a> </div>
+
+</div>
+
+</section>  
+    
+    <section>
+        <h3>Digital literary mapping</h3>
+        <ul style="font-size: 0.7em" >
+            <li class="no-bullet">
+                <a href="http://www.mappingpetersburg.org">· Mapping St Petersburg. Experiments in Literary Cartography</a> (fictional)
+            </li>
+                <li class="no-bullet">
+                <a href="http://www.mappingdante.com">· Mapping Dante. A Study of Places in the Commedia</a> (fictional) 
+            </li>
+                <li class="no-bullet"> 
+                <a href="https://authorial.stanford.edu"> · Authorial London. The city in the lives and works of its Writers</a> (corpus &amp; fictional) 
+            </li> <li class="no-bullet">
+                <a href="http://topostext.org"> · ToposText </a> (historical &amp; fictional)
+            </li> <li class="no-bullet">
+                <a href="http://www.literaturatlas.eu"> ·  Ein literarischer Atlas Europa </a> (fictional)
+            </li>
+               <li class="no-bullet">
+                <a href="http://www.lancaster.ac.uk/fass/projects/spatialhum/geotext/"> ·  Mapping Lake District Literature </a> (historical &amp; fictional)
+            </li>
+               <li class="no-bullet">
+                <a href="http://nywalker.newyorkscapes.org"> ·  NYWalker: geocoding the contents of novels </a> (fictional)
+            </li>
+               <li class="no-bullet">
+                <a href="https://muziejus.github.io/wandering-rocks"> ·  Fabula and Sjužet in “Wandering Rocks” </a> (fictional)
+            </li>
+            </br>
+        </ul>
+        <ul>
+            <li>creation of <i>post-authorial</i> maps <span class="fuente">(Bushell 2012: 152)</span></li>
+            <li>analytical potentiality (+) </li>
+            <li>as a critical component of a DSE (+)</li>
+        </ul>
+    </section>
+            
+</section>
+
+<section>
+    <section id="method">
+    
+            <ul>
+                <h3 style="text-align: center">Byzantine literary genre in Spain (XVI-XVII)</h3>
+                <li>Chronotope: sea travels, pirates, exoticism.</li>    
+                
+                    <p class="cita"><li>
+                        "Kartographisches Schreiben"<span class="fuente" style="font-size: 0.6em">Dünne 2011: 61-66</span>
+                    </li></p>
+                    <h4 style="color: gray">(Historical cartography as narrative model)</h4>
+                    <li><i>Carta Marina</i> (<i>Persiles</i>), <i>Theatrum Orbis Terrarum</i> (<i>Semprilis</i>).
+<!--                    , Mappamondo Catalano Estense (<i>Orlando furioso</i>)-->
+                    </li>
+                    <li>North-South axis vs. Mediterranean basin.</li>
+            </ul>
+            
+    </section>
+       
+    <section>
+        <h3>3) Methodological framework</h3>
+       <ul>
+            <li>Answers &amp; new questions.</li>
+            <li>Possibilities of digital mapping.</li>
+        </ul>
+        <img style="box-shadow: none" class="stretch" src="imagenes/mapping.dh.corpus.png"></img>
+           <h4>Corpus (proof of concept): 5 novels</h4>
+           
+    </section>
+       
+    <section>
+        <h3>Location extraction</h3>
+        <ul>
+            <li><a href="https://nlp.stanford.edu/software/CRF-NER.html">Stanford NER</a></li>
+             <span style="font-size: 0.8em">· version 3.8.0</span>
+             </br>
+             <span style="font-size: 0.8em">· language models 2017/09/06 (Spanish, English)</span>
+             
+             <li><a href="http://nlp.lsi.upc.edu/freeling/">FreeLing</a></li>
+             <span style="font-size: 0.8em">· version 4.0</span>
+             </br>
+             <span style="font-size: 0.8em">· performance with (old) Spanish (+)</span>
+              
+<!--
+            <li><a href="https://opennlp.apache.org">Apache OpenNLP</a></li>
+            <span style="font-size: 0.8em">· for the R package, models for 1.5 series</span>
+            </br>
+            <span style="font-size: 0.8em">· performance with Spanish (-)</span>
+-->
+        </ul>
+    </section>
+    
+    <section>
+        <h3>Geolocation</h3>
+        <h4>
+            <li class="no-bullet">Gazzetters via APIs infrastructure</li>
+        </h4>
+        <ul>
+        <li><a href="http://commons.pelagios.org">Pelagios (ancient places)</a></li>
+		<li><a href="http://www.geonames.org">GeoNames (general)</a></li>
+		<li><a href="http://www.geonames.org/export/wikipedia-webservice.html">GeoNames (Wikipedia) </a></li>
+        </ul>
+    </section>
+    
+    <section>
+       <h4><li class="no-bullet">Geolocation R package: "<a href="https://github.com/editio/georeference">editio/georeference</a>" (forked from ggmap)</li></h4>
+       
+        <img style="box-shadow: none" class="stretch" src="imagenes/mapping.dh.console.georeference.png"></img>
+    </section>    
+    
+    <section>
+       <h3>Georeference and tiling of historical maps (<a href="https://www.qgis.org">QGIS</a>)</h3>
+       </section>    
+        
+    <section>
+       <h3>Digital Mapping (<a href="https://github.com/rstudio/leaflet">Leaflet for R</a>)</h3>
+       
+       <ul>
+       <li>JavaScript library for interactive maps.</li>    
+       <li>one environment for data &amp; visualization.</li>    
+       <li>overlay historic maps.</li>    
+       <li>export capabilities (interactive html). </li>    
+       </ul>
+       </section> 
+    
+</section>
+
+
+<section>
+    <section data-background="imagenes/mapping.dh.cluster.1.png" data-transition = "none" id="cluster">
+          <h3 style="color: black">4) Map visualization</h3>          
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+       <p class="cita-background"> place cluster of five novels</p>
+    </section>
+    
+    <section data-background="imagenes/mapping.dh.cluster.2.png" data-transition = "none">
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+       <p class="cita-background">coverage: cluster's bounds in «Persiles» (red)</p>
+    
+    </section>
+    
+    
+    
+    <section data-background="imagenes/mapping.dh.cluster.3.png" data-transition = "none">
+         </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+        <p class="cita-background">coverage: cluster's bounds in «Aethiopica» (grey)</p>  </section>
+    
+    <section data-background="imagenes/mapping.dh.cluster.4.png" data-transition = "none">
+         </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+        <p class="cita-background">coverage: cluster's bounds in «Semprilis» (green)</p>
+    
+    </section>
+        
+      
+    <section data-background="imagenes/mapping.dh.frq.png" data-transition = "none">
+        
+         </br></br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          
+        <p class="cita-background">places by frequency</p>
+    
+    </section>
+    <section data-background="imagenes/mapping.dh.heatmap.png">
+        
+         </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          
+        <p class="cita-background">places clustered by proximity in «Semprilis» (heat map)</p>
+    
+    </section>
+    <section data-background="imagenes/mapping.dh.statistics.places.png">
+        
+         </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+        <p class="cita-background">shared places between novels (grouped by number)</p>
+    
+    </section>
+    
+</section>
+
+<section>
+		
+<section>
+    <h3>methodological issues <span style="font-size: 0.5em">1/2</span></h3>
+    <ul>
+        <li>Fiction in real places?</li>
+            
+        <p class="cita" style="font-size: 0.7em">"Recent applications of the ‘spatial turn’ in literary studies naively presuppose the mappability of literature, reducing fiction to ‘invented events in real places." <span class="fuente">(Stockhammer, 2013: 123)</span></p>
+        
+      
+             
+        <li>One type of fictional place?</li>         
+        
+        <p style="font-size: 0.7em">historical, invented, indirect reference, mix of real and fictional, displaced, fantastic, explicitly imprecise, etc <span class="fuente">(Reuschel/Hurni, 2011)</span></p>
+        
+           <li>Zones of narrative action?
+            <p style="font-size: 0.7em"> remembered, dreamed places, digresions, diegesis, etc. <span class="fuente">(Piatti, 2008)</span></p>
+            </li>
+            
+            <li>Only place names as spatial feature?</li>
+       
+    </ul>
+    </section>
+    
+ <section>
+    <h3>technical issues <span style="font-size: 0.5em">2/2</span></h3>
+     <ul>
+        <li>Inaccurate NER <span class="fuente">(Bornet/Kaplan, 2017)</span>.</li> 
+        <li>Limits of automated geolocation by gazetteers.</li>
+        <li>Place disambiguation (manual).</li>
+        <li>Uncontrolled <a href="#clustering">clustering method</a>.</li>        
+     </ul>
+ </section>     
+ 
+			<section >
+			    <h4>Gazetteers automated returns</h4>
+			     <img style="box-shadow: none" class="stretch" src="imagenes/mapping.statistics.gazetteers.png"></img>
+			</section>
+				
+						
+</section>
+
+
+<section>
+		
+	<section id="itinerary" data-background="imagenes/mapping.dh.itinerario.png">
+		
+    
+    </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          </br>
+          <h3 style="color: black">5) Visualization of itineraries</h3>
+       <p class="cita-background">Itinerary and stops of the lovers (Semprilis and Genorodano).</p>
+		
+        </section>
+			
+	<section id="itinerary">			
+
+    <h3><i>literarische Kartizität</i></h3>      
+   <p class="cita">"Affinität oder Distanz zu kartographischen Darstellungsverfahren" <span class="fuente">(Stockhamer, 2007: 68) </span></p>
+   <h4 style="color: gray">(affinity or distance to cartographic visualization techniques)</h4>
+    
+        
+            
+                    
+	</section>
+
+	<section data-background="imagenes/mapping.dh.congo.png">
+    </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+		</br>
+		</br>
+<p class="cita-background">Historical map overlay (digitized and georeferenced)</p>
+ 		
+	    
+	</section>
+
+<section data-background="imagenes/mapping.dh.congo.zoomin.png">
+    </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+		</br>
+		</br>
+<p class="cita-background">Inset: "<i>Congi Regni Christiani, in Africa, nova descriptio.</i>"</p>
+ 		
+	    
+	</section>
+
+<section data-background="imagenes/mapping.dh.congo.nogeospace.png">
+    </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+		</br>
+		</br>
+	</section>
+
+<section data-background="imagenes/mapping.dh.poland.png">
+    </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+		</br>
+		</br>
+		<p class="cita-background">overlay: Polish-Lithuanian Commonwealth (circa 1619)</p>
+	</section>
+
+
+</section>	 	
+	<section id="conclusions">
+	    <h3>6) Final remarks</h3>
+        <ul style="font-size: 0.9em">
+	                
+	            <li>"GIS <i>killing</i> cartography" <span class="fuente">(Crampton, 2010: 22)</span></li>
+	            <li>Literary Neogeography. <span class="fuente">(Turner, 2006; Richterich, 2011)</span></li>
+	               <li>Critic to Moretti's maps (graphs vs. maps). <span class="fuente">(Moretti, 2007)</span></li>
+	             <li>(Un)mappability of literature. <span class="fuente">(Stockhammer, 2007)</span></li>
+	            
+	    </ul>
+	    
+	</section>
+
+
+        <section id="references">
+	    <h3>references</h3>
+        <ul style="font-size: 0.5em; margin-left: 2em;
+      text-indent: -2.5em; list-style: none; text-align: justify">
+        
+        <li>D. J. Bodenhamer,  J. Corrigan, T. M. Harris (eds.). 2010. <i>The Spatial Humanities. GIS and the Future of Humanities Scholarship</i>, Indiana University Press, Bloomington.</li>
+         <li>C. Bornet, F. Kaplan. 2017. “A Simple Set of Rules for Characters and Place Recognition in French Novels”, <i>Frontiers in Digital Humanities</i>, 4, March.</li>
+         <li>S. Bushell. 2012. “The Slipperiness of Literary Maps: Critical Cartography and Literary Cartography”. <i>Cartographica: The International Journal for Geographic Information and Geovisualization</i>, 47, 3, 149-60.</li>
+         <li>J. W. Crampton. 2010. <i>Mapping. A Critical Introduction to Cartography and GIS</i>. Wiley-Blackwell.</li>
+        <li>J. Dünne. 2011. <i>Die kartographische Imagination: Erinnern, Erzählen und Fingieren in der Frühen Neuzeit</i>, München, Fink.</li>
+        <li>J. L. Losada Palenzuela. 2017. "Desplazamiento de la imagen septentrional: Polonia en La historia de las fortunas de Semprilis y Genorodano". In H. Ehrlicher &amp; J. Dünne (Eds.), Ficciones entre mundos. Nuevas lecturas de «Los Trabajos de Persiles y Sigismunda» de Miguel de Cervantes (pp. 253-273). Kassel: Reichenberger.</li>
+        <li>F. Moretti. 2007. <i>Graphs, Maps and Trees. Abstract Models for Literary History</i>. 2.ª ed. London, New York. Verso.</li>
+        <li> B. Piatti. 2008. <i>Die Geographie der Literatur. Schauplätze, Handlungsräume, Raumphantasien</i>. Göttingen,  Wallstein-Verlag.</li>
+        <li>A.K. Reuschel, L. Hurni. 2011. “Mapping Literature: Visualisation of Spatial Uncertainty in Fiction”. <i>The Cartographic Journal. Cartographies of Fictional Worlds</i>, 48, 4, 293-308.</li>
+        <li>R. Stockhammer. 2007. <i>Kartierung der Erde: Macht und Lust in Karten und Literatur</i>. München, Fink.</li>
+	    <li>R. Stockhammer. 2013. “Exokeanismós: the (un)mappability of literature”,  <i>Primerjalna Knjizevnost</i>, 36, 2, 123-138.</li>
+	    
+	    </ul>
+	    
+	</section>																				
+
+        <!--
+        *****************
+        *****CREDITOS****   
+        *****************
+        -->
+		<section id="impressum">
+		
+			 <div style="font-size: 0.8em;"><a href="http://www.ifr.uni.wroc.pl/pl/nasz-instytut/pracownicy/dr-jose-luis-losada-palenzuela">José Luis Losada Palenzuela</a>, "Map visualization and quantification of literary places in a Spanish corpus", 2018.</div>			 
+			 <h2 id="filete">✽</h2>
+
+			 <div class="licencia"><a href="http://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0)</a></div>
+			
+				
+		 </section>  <!--impressum-->
+		
+		
+
+		<section style="font-size: 0.6em" id="clustering">
+            <h3>Clustering in leaflet maps</h3>
+            <h4><b>Grid‐Based Clustering</b> <span class="fuente">(Wang, Yang, Muntz: 1997)</a></span></h4>
+		    <ul>
+		        <li>2-D surface.</li>
+		        <li>Spatial data.</li>
+		        <li>Map area divided into squares.</li>
+		        <li>Square size (predefined parameter) changes at each zoom level.</li>
+		        <li>Groups points into each square grid.</li>
+		        <li>Methods: STING, WaveCluster, CLIQUE.</li>
+               <li>Depends on a distance measure?</li>
+                   <ul><li>grid (therefore clusters) changes by a predefined parameter (square size).</li></ul>
+                </br>
+		    </ul>
+            <h4><b>Leaflet clustering funcion</b> <span class="fuente"><a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet.markercluster</a></span></h4>
+            <ul>
+            <li>Algorithm uncontrolled by the user (STING?).</li>
+            <li>Modification of the grid size?</li>
+            <li>(just) few options:</li>
+            
+            <ul><li>"maxClusterRadius": max. radius (in <i>pixels</i>, default 80) from the central marker. </li></ul>
+            <li>Aligned with the gridlines of latitude and longitude?</li>
+            <li>Projections? Only WGS 84 or Web Mercator coordinate systems?</li>
+            </ul>
+		        		    
+		</section>
+		
+		
+<!--
+		<section data-background="imagenes/mapas-carta-marina.png">
+    </br>
+        </br>
+        </br>
+        </br>
+    
+        </br>
+        </br>
+        </br>
+        </br>
+    <span class="fuente-image-background"> Olaus Magnus, <i>Carta marina et descriptio septemtrionalium terrarum</i> (Venecia: 1539) · <a href="https://commons.wikimedia.org/wiki/File%3ACarta_Marina.jpeg"> wikimedia commons </a> </span>   
+    </section>
+-->
+    
+    
+<!--
+    <section data-background="imagenes/mapping.estense.png">
+    </br>
+        </br>
+        </br>
+        </br>
+    
+        </br>
+        </br>
+        </br>
+        </br>
+    <span class="fuente-image-background"> Mappamondo Catalano Estense (h. 1450), <a href="http://bibliotecaestense.beniculturali.it/info/img/geo.html">Biblioteca Estense Universitaria</a>, Modena (CC: BY-NC-ND)</span>   
+    </section>
+-->
+		
+		
+	</div> <!--End of slides container-->
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+	// Full list of configuration options available at:
+	// https://github.com/hakimel/reveal.js#configuration
+	Reveal.initialize({
+		controls: true,
+		progress: true,
+		history: true,
+		center: true,
+
+		transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+		// Optional reveal.js plugins
+		dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true }
+		]
+	});
+
+</script>
+
+<!--ESQUINAS MENU in every slide-->
+
+<div class="footer">
+
+<p>José Luis Losada Palenzuela · Uniwersytet Wrocławski</p>
+			
+</div> <!--FIN FOOTER FIRMA-->
+
+<div id="menu" style="	 	background-color: #534d4d;">
+<a href="#/contents" title="Content">☰</a> 
+</div>   <!--FIN INDICE-->
+
+<div id="logo">
+<a href="http://www.uni.wroc.pl"><img src="imagenes/logo_UWr_wer_rozsz_P3015.png" title="Universidad de Wrocław"/></a> 
+</div> <!--FIN LOGO-->
+
+</body>
+</html>
